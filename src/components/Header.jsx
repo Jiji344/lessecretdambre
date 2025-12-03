@@ -44,7 +44,7 @@ const Header = () => {
             </h1>
           </div>
 
-          {/* Desktop Navigation - Services et À propos échangés */}
+          {/* Desktop Navigation */}
           <nav className="nav-desktop">
             <button onClick={() => scrollToSection('accueil')} className="nav-link">
               Accueil
@@ -54,6 +54,9 @@ const Header = () => {
             </button>
             <button onClick={() => scrollToSection('services')} className="nav-link">
               Services
+            </button>
+            <button onClick={() => scrollToSection('reviews')} className="nav-link">
+              Avis
             </button>
             <button onClick={() => scrollToSection('contact')} className="nav-link">
               Contact
@@ -76,7 +79,7 @@ const Header = () => {
             </svg>
           </label>
 
-          {/* Mobile Navigation - Services et À propos échangés */}
+          {/* Mobile Navigation */}
           {isMenuOpen && (
             <nav className="nav-mobile">
               <button onClick={() => scrollToSection('accueil')} className="nav-link-mobile">
@@ -87,6 +90,9 @@ const Header = () => {
               </button>
               <button onClick={() => scrollToSection('services')} className="nav-link-mobile">
                 Services
+              </button>
+              <button onClick={() => scrollToSection('reviews')} className="nav-link-mobile">
+                Avis
               </button>
               <button onClick={() => scrollToSection('contact')} className="nav-link-mobile">
                 Contact

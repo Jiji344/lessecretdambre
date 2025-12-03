@@ -1,4 +1,3 @@
-import { Award, Heart, Sparkles } from 'lucide-react';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 import './About.css';
 
@@ -8,17 +7,17 @@ const About = () => {
 
     const features = [
         {
-            icon: <Award size={40} />,
+            icon: <img src="/asset/icon/medaille.svg" alt="Expertise" style={{ width: 40, height: 40, filter: 'brightness(0) invert(1)' }} />,
             title: 'Expertise',
             description: '10 ans d\'expérience et un savoir-faire reconnu dans tous les domaines de la beauté',
         },
         {
-            icon: <Sparkles size={40} />,
+            icon: <img src="/asset/icon/cierge-magique.svg" alt="Qualité" style={{ width: 40, height: 40, filter: 'brightness(0) invert(1)' }} />,
             title: 'Qualité',
             description: 'Produits naturels et certifiés pour le respect de votre peau et de l\'environnement',
         },
         {
-            icon: <Heart size={40} />,
+            icon: <img src="/asset/icon/coeur.svg" alt="Bien-être" style={{ width: 40, height: 40, filter: 'brightness(0) invert(1)' }} />,
             title: 'Bien-être',
             description: 'Ambiance apaisante et équipe bienveillante pour une expérience complète',
         },

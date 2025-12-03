@@ -9,13 +9,16 @@
 }
 
 :root {
-  /* Color Palette */
-  --color-primary: #740a18;
-  --color-secondary: #e7b42d;
-  --color-background: #f9f7f4;
+  /* Color Palette - Luxe Noir & Or */
+  --color-primary: #1a1a1a;
+  --color-secondary: #c9a55c;
+  --color-accent: #a08445;
+  --color-background: #faf9f7;
+  --color-background-alt: #f0ece4;
   --color-white: #ffffff;
-  --color-text: #000000;
-  --color-text-light: #333333;
+  --color-text: #1a1a1a;
+  --color-text-light: #4a4a4a;
+  --color-text-muted: #888888;
 
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -33,9 +36,9 @@
   --transition-fast: all 0.15s ease;
 
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 25px rgba(116, 10, 24, 0.15);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
 
   /* Border Radius */
   --radius-sm: 4px;
@@ -124,10 +127,10 @@ a:hover {
 }
 
 .btn-primary:hover {
-  background-color: #f5c94a;
+  background-color: #d4b366;
   color: var(--color-primary);
-  border-color: #f5c94a;
-  box-shadow: 0 6px 20px rgba(231, 180, 45, 0.5);
+  border-color: #d4b366;
+  box-shadow: 0 6px 20px rgba(201, 165, 92, 0.4);
 }
 
 
