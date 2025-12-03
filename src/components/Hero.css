@@ -5,21 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--color-primary) 0%, #a31428 50%, var(--color-secondary) 100%);
+    background: url('/asset/hero/hero.jpg') center 30% / cover no-repeat;
     overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:
-        radial-gradient(circle at 20% 50%, rgba(231, 180, 45, 0.2) 0%, transparent 50%),
-        radial-gradient(circle at 80% 50%, rgba(116, 10, 24, 0.3) 0%, transparent 50%);
-    animation: gradientShift 8s ease-in-out infinite;
 }
 
 @keyframes gradientShift {
@@ -110,6 +97,7 @@
     padding: 1rem 2.5rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     animation: pulse 2s ease-in-out infinite;
+    transition: transform 0.25s ease-out, box-shadow 0.25s ease-out, background-color 0.25s ease-out;
 }
 
 @keyframes pulse {
@@ -125,9 +113,9 @@
 }
 
 .hero-cta:hover {
-    transform: translateY(-3px) !important;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-    animation: none;
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35), 0 0 15px rgba(231, 180, 45, 0.6);
+    animation-play-state: paused;
 }
 
 /* Responsive Design */

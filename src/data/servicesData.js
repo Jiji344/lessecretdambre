@@ -267,10 +267,10 @@ export const servicesData = [
         ]
     },
 
-    // 10. AUTOUR DU HAMMAM PRIVATIF
+    // 10. HAMMAM PRIVATIF
     {
         id: 10,
-        category: "Autour du Hammam Privatif",
+        category: "Hammam Privatif",
         description: "Soins effectués par l'esthéticienne exclusivement. Seule la rubrique 'Autour du Hammam' comprend la séance H.",
         startingPrice: 89,
         services: [
