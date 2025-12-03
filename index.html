@@ -1,14 +1,75 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Les Secrets d'Ambre - Salon de beauté et bien-être à Montpellier. Épilation, soins du visage, massages, maquillage professionnel. Produits naturels et équipe qualifiée." />
-    <title>Les Secrets d'Ambre - Beauté et Bien-être à Montpellier</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Les Secrets d'Ambre - Salon de beauté à Montpellier. Épilation, soins visage, massages, maquillage avec produits naturels. Réservez en ligne sur Planity." />
+  <meta name="keywords"
+    content="épilation, salon beauté, Montpellier, soins visage, massage, maquillage, beauté, miel, cire, fleur de coton, hammam" />
+  <meta name="author" content="Les Secrets d'Ambre" />
+
+  <!-- Open Graph Tags for Social Media -->
+  <meta property="og:type" content="business.business" />
+  <meta property="og:title" content="Les Secrets d'Ambre - Salon de Beauté Montpellier" />
+  <meta property="og:description"
+    content="Découvrez nos services de beauté et bien-être. Épilation, soins, massages avec produits naturels." />
+  <meta property="og:url" content="https://lessecretsdambre.fr" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Title -->
+  <title>Les Secrets d'Ambre - Salon de Beauté Montpellier | Épilation, Soins, Massages</title>
+
+  <!-- Structured Data (Schema.org) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Les Secrets d'Ambre",
+      "description": "Salon de beauté et bien-être à Montpellier",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "17 Rue Lunaret",
+        "addressLocality": "Montpellier",
+        "postalCode": "34090",
+        "addressCountry": "FR"
+      },
+      "telephone": "+33662360108",
+      "email": "contact@lessecretsdambre.fr",
+      "url": "https://lessecretsdambre.fr",
+      "priceRange": "€€",
+      "areaServed": "Montpellier",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Monday",
+          "opens": "13:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Tuesday",
+          "opens": "10:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "10:00",
+          "closes": "18:00"
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

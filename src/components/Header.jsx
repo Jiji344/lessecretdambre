@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
 import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const handleCheckboxChange = (e) => {
+    setIsMenuOpen(e.target.checked);
   };
 
   const scrollToSection = (sectionId) => {
@@ -37,18 +36,25 @@ const Header = () => {
             <button onClick={() => scrollToSection('about')} className="nav-link">
               À propos
             </button>
-            <button onClick={() => scrollToSection('horaires')} className="nav-link">
-              Horaires
-            </button>
             <button onClick={() => scrollToSection('contact')} className="nav-link">
               Contact
             </button>
           </nav>
 
-          {/* Mobile Menu Button */}
-          <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle menu">
-            {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+          {/* Mobile Menu Burger */}
+          <div className="mobile-menu-toggle">
+            <input
+              type="checkbox"
+              id="checkbox"
+              checked={isMenuOpen}
+              onChange={handleCheckboxChange}
+            />
+            <label htmlFor="checkbox" className="toggle">
+              <div className="bars" id="bar1"></div>
+              <div className="bars" id="bar2"></div>
+              <div className="bars" id="bar3"></div>
+            </label>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -62,9 +68,6 @@ const Header = () => {
             </button>
             <button onClick={() => scrollToSection('about')} className="nav-link-mobile">
               À propos
-            </button>
-            <button onClick={() => scrollToSection('horaires')} className="nav-link-mobile">
-              Horaires
             </button>
             <button onClick={() => scrollToSection('contact')} className="nav-link-mobile">
               Contact

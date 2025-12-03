@@ -1,28 +1,43 @@
+/* Header - Glassmorphism Effect */
 .header {
-    background-color: var(--color-white);
-    box-shadow: var(--shadow-md);
-    padding: 1rem 0;
-    position: relative;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    padding: 1rem 0;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 /* Logo */
+.logo {
+    flex-shrink: 0;
+}
+
 .logo-text {
     font-family: var(--font-heading);
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
-    color: var(--color-primary);
+    font-size: 1.5rem;
     font-weight: 700;
-    margin: 0;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    margin: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo-text:hover {
+    transform: scale(1.05);
 }
 
 /* Desktop Navigation */
@@ -35,14 +50,14 @@
 .nav-link {
     background: none;
     border: none;
-    font-family: var(--font-primary);
     font-size: 1rem;
     font-weight: 500;
     color: var(--color-text);
     cursor: pointer;
     position: relative;
     padding: 0.5rem 0;
-    transition: var(--transition-fast);
+    transition: color 0.3s ease;
+    font-family: var(--font-primary);
 }
 
 .nav-link::after {
@@ -52,49 +67,112 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-    transition: var(--transition-smooth);
+    background-color: var(--color-secondary);
+    transition: width 0.3s ease;
 }
 
 .nav-link:hover {
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 .nav-link:hover::after {
     width: 100%;
 }
 
-/* Mobile Menu Button */
-.mobile-menu-btn {
+/* Mobile Menu Toggle - Burger Checkbox */
+.mobile-menu-toggle {
     display: none;
-    background: none;
-    border: none;
-    color: var(--color-primary);
+    position: relative;
+    z-index: 1001;
+}
+
+#checkbox {
+    display: none;
+}
+
+.toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-    padding: 0.5rem;
-    transition: var(--transition-fast);
-}
-
-.mobile-menu-btn:hover {
-    color: var(--color-secondary);
-    transform: scale(1.1);
-}
-
-/* Mobile Navigation */
-.nav-mobile {
-    display: none;
+    display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    transition-duration: 0.5s;
+}
+
+.bars {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-primary);
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+#bar2 {
+    transition-duration: 0.8s;
+}
+
+#bar1,
+#bar3 {
+    width: 70%;
+}
+
+#checkbox:checked+.toggle .bars {
+    position: absolute;
+    transition-duration: 0.5s;
+}
+
+#checkbox:checked+.toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: 0.5s;
+}
+
+#checkbox:checked+.toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: 0.5s;
+    background-color: var(--color-secondary);
+}
+
+#checkbox:checked+.toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: 0.5s;
+    background-color: var(--color-secondary);
+}
+
+#checkbox:checked+.toggle {
+    transition-duration: 0.5s;
+    transform: rotate(180deg);
+}
+
+/* Mobile Navigation - Glassmorphism Effect */
+.nav-mobile {
+    position: absolute;
+    top: calc(100% + 1rem);
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-top: 2px solid var(--color-secondary);
+    border-radius: 0 0 16px 16px;
+    padding: 1rem 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     animation: slideDown 0.3s ease-out;
 }
 
 @keyframes slideDown {
     from {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
 
     to {
@@ -106,40 +184,78 @@
 .nav-link-mobile {
     background: none;
     border: none;
-    font-family: var(--font-primary);
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     font-weight: 500;
     color: var(--color-text);
     cursor: pointer;
-    padding: 0.75rem 1rem;
+    padding: 1rem 1.5rem;
     text-align: left;
-    transition: var(--transition-fast);
-    border-radius: var(--radius-sm);
+    transition: all 0.3s ease;
+    font-family: var(--font-primary);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link-mobile:last-child {
+    border-bottom: none;
+}
+
+.nav-link-mobile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(231, 180, 45, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.nav-link-mobile:hover::before {
+    left: 100%;
 }
 
 .nav-link-mobile:hover {
-    background-color: var(--color-background);
-    color: var(--color-primary);
-    padding-left: 1.5rem;
+    background-color: rgba(231, 180, 45, 0.1);
+    color: var(--color-secondary);
+    padding-left: 2rem;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
     .nav-desktop {
         display: none;
     }
 
-    .mobile-menu-btn {
+    .mobile-menu-toggle {
         display: block;
     }
 
-    .nav-mobile {
-        display: flex;
+    .logo-text {
+        font-size: 1.25rem;
+    }
+
+    /* Make header-content relative for absolute positioning */
+    .header-content {
+        position: relative;
     }
 }
 
 @media (min-width: 769px) {
+    .mobile-menu-toggle {
+        display: none;
+    }
+
     .nav-mobile {
         display: none !important;
     }
+}
+
+/* Enhanced glassmorphism on scroll */
+.header.scrolled {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }

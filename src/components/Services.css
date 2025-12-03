@@ -1,0 +1,323 @@
+.services {
+    background-color: var(--color-background);
+    padding: 80px 0;
+}
+
+.services-header {
+    margin-bottom: 60px;
+}
+
+.services-header h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    margin-bottom: var(--spacing-sm);
+}
+
+.services-subtitle {
+    font-size: 1.125rem;
+    color: #666;
+    margin-top: var(--spacing-md);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: var(--spacing-xl);
+}
+
+/* Service Card */
+.service-card {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-secondary);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Icon Wrapper */
+.service-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+    background: linear-gradient(135deg, rgba(116, 10, 24, 0.05) 0%, rgba(231, 180, 45, 0.05) 100%);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon-wrapper {
+    transform: scale(1.1) rotate(5deg);
+    background: linear-gradient(135deg, rgba(116, 10, 24, 0.1) 0%, rgba(231, 180, 45, 0.1) 100%);
+}
+
+.service-icon-wrapper svg {
+    width: 60px;
+    height: 60px;
+}
+
+/* Service Title */
+.service-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-sm);
+    font-family: var(--font-heading);
+    min-height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Service Info */
+.service-info {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Service Price */
+.service-price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+/* View All Button */
+.btn-view-all {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    font-weight: 600;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.btn-view-all:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(116, 10, 24, 0.3);
+}
+
+.btn-view-all:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+
+/* Desktop: 3 columns */
+@media (min-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .services {
+        padding: 60px 0;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 767px) {
+    .services {
+        padding: 60px 0;
+    }
+
+    .services-header {
+        margin-bottom: 40px;
+    }
+
+    .services-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .services-subtitle {
+        font-size: 1rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .service-card {
+        padding: 16px;
+    }
+
+    .service-icon-wrapper {
+        width: 70px;
+        height: 70px;
+    }
+
+    .service-icon-wrapper svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .service-title {
+        font-size: 1rem;
+        min-height: auto;
+    }
+
+    .service-price {
+        font-size: 0.95rem;
+    }
+
+    .btn-view-all {
+        max-width: 100%;
+    }
+}
+
+/* Animation on scroll (staggered entrance) */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-card {
+    animation: fadeInUp 0.6s ease-out backwards;
+}
+
+/* Stagger animation for cards */
+.service-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.service-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.service-card:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.service-card:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.service-card:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.service-card:nth-child(6) {
+    animation-delay: 0.3s;
+}
+
+.service-card:nth-child(7) {
+    animation-delay: 0.35s;
+}
+
+.service-card:nth-child(8) {
+    animation-delay: 0.4s;
+}
+
+.service-card:nth-child(9) {
+    animation-delay: 0.45s;
+}
+
+.service-card:nth-child(10) {
+    animation-delay: 0.5s;
+}
+
+.service-card:nth-child(11) {
+    animation-delay: 0.55s;
+}
+
+.service-card:nth-child(12) {
+    animation-delay: 0.6s;
+}
+
+.service-card:nth-child(13) {
+    animation-delay: 0.65s;
+}
+
+.service-card:nth-child(14) {
+    animation-delay: 0.7s;
+}
+
+.service-card:nth-child(15) {
+    animation-delay: 0.75s;
+}
+
+.service-card:nth-child(16) {
+    animation-delay: 0.8s;
+}
+
+.service-card:nth-child(17) {
+    animation-delay: 0.85s;
+}
+
+.service-card:nth-child(18) {
+    animation-delay: 0.9s;
+}
+
+.service-card:nth-child(19) {
+    animation-delay: 0.95s;
+}
+
+.service-card:nth-child(20) {
+    animation-delay: 1s;
+}
