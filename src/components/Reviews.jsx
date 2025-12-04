@@ -7,46 +7,137 @@ const Reviews = () => {
     const reviews = [
         {
             id: 1,
-            name: 'Sophie M.',
+            name: 'Ilona Ferrat',
             rating: 5,
-            text: 'Un moment de pur bonheur ! L\'équipe est adorable et très professionnelle. Je recommande vivement le hammam suivi d\'un massage, c\'est divin.',
-            service: 'Hammam & Massage',
+            text: 'J’ai fait une épilation des jambes complètes et je suis vraiment ravie du résultat ! L’esthéticienne a été à la fois douce et professionnelle.',
+            service: 'Épilation',
         },
         {
             id: 2,
-            name: 'Nadia K.',
+            name: 'Lau Franciosa',
             rating: 5,
-            text: 'Épilation au miel parfaite, beaucoup moins douloureuse que la cire classique. Ma peau est douce et pas irritée. Je ne changerai plus !',
-            service: 'Épilation au Miel',
+            text: 'Premier brown lift et épilation sourcils de ma vie, JE RECOMMANDE SANS HÉSITATION. Aurore est une femme très bienveillante.',
+            service: 'Brow Lift',
         },
         {
             id: 3,
-            name: 'Marie-Claire D.',
+            name: 'Lana Janin-gadoux',
             rating: 5,
-            text: 'Le soin visage anti-âge est incroyable. Ma peau est lumineuse et repulpée. L\'ambiance est zen et relaxante, on se sent vraiment chouchoutée.',
-            service: 'Soin Visage',
+            text: 'C’était ma première épilation au miel et je ne pouvais pas espérer une meilleure expérience. L’esthéticienne a su me mettre immédiatement à l’aise.',
+            service: 'Épilation Miel',
         },
         {
             id: 4,
-            name: 'Fatima B.',
+            name: 'Florine Perrin',
             rating: 5,
-            text: 'Le forfait mariée était parfait ! Maquillage sublime qui a tenu toute la journée. Merci pour cette journée inoubliable.',
-            service: 'Forfait Mariée',
+            text: 'Je suis allée me faire épiler les sourcils au fil dans cet institut et je ne peux que recommander ! L\'épilation est précise, soignée et irréprochable.',
+            service: 'Épilation Fil',
         },
         {
             id: 5,
-            name: 'Léa T.',
+            name: 'Ambre Bertelle',
             rating: 5,
-            text: 'Super expérience pour ma première extension de cils. Résultat naturel et effet wahou garanti. L\'esthéticienne est très minutieuse.',
-            service: 'Extension Cils',
+            text: 'Plus que ravie de la prestation (épilation au miel) réalisée par Aurore aujourd’hui, dans son salon.',
+            service: 'Épilation Miel',
         },
         {
             id: 6,
-            name: 'Amina R.',
+            name: 'Lili',
             rating: 5,
-            text: 'Je viens ici depuis 3 ans pour mes épilations. Toujours un accueil chaleureux, des produits de qualité et un résultat impeccable.',
+            text: 'J’ai passé un moment absolument parfait lors de mon rendez-vous ! Aurore est à la fois très professionnelle, douce et incroyablement chaleureuse.',
+            service: 'Soin',
+        },
+        {
+            id: 7,
+            name: 'Lulu S',
+            rating: 5,
+            text: 'C\'était ma première fois aux Secrets d\'Ambre et l\'expérience était tout simplement magique !! Aurore est incroyable, très professionnelle.',
+            service: 'Expérience',
+        },
+        {
+            id: 8,
+            name: 'Anaïs',
+            rating: 5,
+            text: 'Merci à Aurore pour son professionnalisme et sa bienveillance. Je me rase depuis toujours et je me suis enfin lancée dans l\'épilation à la cire.',
+            service: 'Épilation Cire',
+        },
+        {
+            id: 9,
+            name: 'Claire Grd',
+            rating: 5,
+            text: 'Très bien accueillie. Massage exquis ! Première fois ici et je ne suis pas déçue. Je reviendrais :)',
+            service: 'Massage',
+        },
+        {
+            id: 10,
+            name: 'Hélène ANDRE',
+            rating: 5,
+            text: 'Fabuleux ! Mes ongles étaient trop courts, dédoublés, très moches ! Et avec un gel bio, et un vernis bio, les voici protégés et magnifiques !',
+            service: 'Onglerie Bio',
+        },
+        {
+            id: 11,
+            name: 'Louise Mouton',
+            rating: 5,
+            text: 'Excellente esthéticienne, je recommande les yeux fermés. Elle utilise uniquement des produits naturels, notamment la cire de miel qui est magique.',
+            service: 'Épilation Miel',
+        },
+        {
+            id: 12,
+            name: 'Dado Latifa',
+            rating: 5,
+            text: 'Browlift parfait et vraiment perfectionniste. Vraiment top ☺️☺️ je vais revenir à chaque fois pour faire mes sourcils.',
+            service: 'Brow Lift',
+        },
+        {
+            id: 13,
+            name: 'Lison Olmeta',
+            rating: 5,
+            text: 'Un institut vraiment au top ! En tant que cliente, j’ai toujours été ravie des soins : un accueil chaleureux, une ambiance apaisante.',
+            service: 'Soin',
+        },
+        {
+            id: 14,
+            name: 'Clara Olivia GAULIN',
+            rating: 5,
+            text: 'Aurore est très consciencieuse et appliquée dans son travail. J’ai fait une épilation au miel qui a été peu douloureuse.',
+            service: 'Épilation Miel',
+        },
+        {
+            id: 15,
+            name: 'Isabelle Vigneron',
+            rating: 5,
+            text: 'Une douce parenthèse entre les mains d\'Aurore... une professionnelle avec un vrai talent ! Une connaissance des différentes manipulations.',
+            service: 'Massage',
+        },
+        {
+            id: 16,
+            name: 'Emma Aguilar',
+            rating: 5,
+            text: 'Je suis passée aux secrets d\'ambre pour un massage du dos, et ça m\'a fait un bien fou !',
+            service: 'Massage Dos',
+        },
+        {
+            id: 17,
+            name: 'Plume',
+            rating: 5,
+            text: 'Présente aujourd\'hui pour un soin "beauté des pieds", j\'ai particulièrement apprécié la douceur de mes pieds après la prestation.',
+            service: 'Beauté des Pieds',
+        },
+        {
+            id: 18,
+            name: 'Aurélie DRAKE',
+            rating: 5,
+            text: 'Ma fille a été très contente pour sa première épilation de l’accueil chaleureux et rassurant d’Aurore qui est une personne qualifiée.',
             service: 'Épilation',
         },
+        {
+            id: 19,
+            name: 'Olivia SERENELLI-PESIN',
+            rating: 5,
+            text: 'Première fois ici pour une manucure + vernis semi permanent, c\'était parfait ! Petit café en arrivant, discussions agréables.',
+            service: 'Manucure',
+        }
     ];
 
     const renderStars = (rating) => {
@@ -67,24 +158,61 @@ const Reviews = () => {
                         Découvrez ce que nos clientes pensent de nos services
                     </p>
                 </div>
+            </div>
 
-                <div className="reviews-grid">
-                    {reviews.map((review, index) => (
-                        <div
-                            key={review.id}
+            <div className="reviews-scroller">
+                <div className="reviews-track">
+                    {/* Original Reviews */}
+                    {reviews.map((review) => (
+                        <a
+                            href="https://www.google.com/search?sca_esv=362c7c7bfa1ca87d&rlz=1C1FHFK_frFR1191&hl=fr-FR&biw=2260&bih=1062&sxsrf=AE3TifMXDA6wrOUZdIbxLKedKRt0_fScWA:1764880123834&q=Les+Secrets+d%27Ambre+Avis&si=AMgyJEvkVjFQtirYNBhM3ZJIRTaSJ6PxY6y1_6WZHGInbzDnMRNkrxFkO5_RLFLCzLbD6a7tnu8TdA_uLL9DbSSfoSFAE-FxTrnn5Xs-WNsNoPmJk2D6Wqk%3D&uds=AOm0WdGNah9AtkGsBTNdp6ZQwrnR9AVrxFPJ6Sf5fSTDMaX4dx7kXspERDVTalE3gqDCRPrO7uuUdvcgpeqBjuuZwqwXBfyzcUFpvWM3NwRdoyft9nR1Wmz14EHSK737fRCvDftKMuk5&sa=X&ved=2ahUKEwjMsejm4qSRAxWnoScCHW9cNC0Q3PALegQIPRAF"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            key={`original-${review.id}`}
                             className="review-card"
-                            data-animate="fade-up"
-                            data-animate-delay={Math.min(index + 1, 6)}
                         >
                             <div className="review-stars">
                                 {renderStars(review.rating)}
                             </div>
                             <p className="review-text">"{review.text}"</p>
-                            <div className="review-author">
-                                <span className="review-name">{review.name}</span>
-                                <span className="review-service">{review.service}</span>
+                            <div className="review-footer">
+                                <div className="review-google-icon" style={{ color: 'var(--color-secondary)' }} aria-label="Avis Google" role="img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                        <path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z" />
+                                    </svg>
+                                </div>
+                                <div className="review-author">
+                                    <span className="review-name">{review.name}</span>
+                                    <span className="review-service">{review.service}</span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
+                    ))}
+                    {/* Duplicated Reviews for Infinite Scroll */}
+                    {reviews.map((review) => (
+                        <a
+                            href="https://www.google.com/search?sca_esv=362c7c7bfa1ca87d&rlz=1C1FHFK_frFR1191&hl=fr-FR&biw=2260&bih=1062&sxsrf=AE3TifMXDA6wrOUZdIbxLKedKRt0_fScWA:1764880123834&q=Les+Secrets+d%27Ambre+Avis&si=AMgyJEvkVjFQtirYNBhM3ZJIRTaSJ6PxY6y1_6WZHGInbzDnMRNkrxFkO5_RLFLCzLbD6a7tnu8TdA_uLL9DbSSfoSFAE-FxTrnn5Xs-WNsNoPmJk2D6Wqk%3D&uds=AOm0WdGNah9AtkGsBTNdp6ZQwrnR9AVrxFPJ6Sf5fSTDMaX4dx7kXspERDVTalE3gqDCRPrO7uuUdvcgpeqBjuuZwqwXBfyzcUFpvWM3NwRdoyft9nR1Wmz14EHSK737fRCvDftKMuk5&sa=X&ved=2ahUKEwjMsejm4qSRAxWnoScCHW9cNC0Q3PALegQIPRAF"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            key={`duplicate-${review.id}`}
+                            className="review-card"
+                        >
+                            <div className="review-stars">
+                                {renderStars(review.rating)}
+                            </div>
+                            <p className="review-text">"{review.text}"</p>
+                            <div className="review-footer">
+                                <div className="review-google-icon" style={{ color: 'var(--color-secondary)' }} aria-label="Avis Google" role="img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                        <path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z" />
+                                    </svg>
+                                </div>
+                                <div className="review-author">
+                                    <span className="review-name">{review.name}</span>
+                                    <span className="review-service">{review.service}</span>
+                                </div>
+                            </div>
+                        </a>
                     ))}
                 </div>
             </div>

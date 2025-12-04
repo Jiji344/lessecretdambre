@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
@@ -90,12 +90,30 @@ const Contact = () => {
                                 </a>
                             </div>
                         </div>
+
+                        {/* Facebook */}
+                        <div className="info-item">
+                            <div className="info-icon">
+                                <Facebook size={24} />
+                            </div>
+                            <div className="info-text">
+                                <h3>Facebook</h3>
+                                <a
+                                    href="https://www.facebook.com/lessecrets.ambre"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="info-link"
+                                >
+                                    Les Secrets d'Ambre
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Right Column - Schedule + CTA Card */}
                     <div className="contact-right-column">
                         {/* Schedule */}
-                        <div className="info-item schedule-block">
+                        <div id="opening-hours" className="info-item schedule-block">
                             <div className="info-icon">
                                 <Clock size={24} />
                             </div>
@@ -116,7 +134,7 @@ const Contact = () => {
                         </div>
 
                         {/* CTA Card */}
-                        <div className="contact-cta">
+                        <div id="contact-cta" className="contact-cta">
                             <div className="cta-card">
                                 <h3 className="cta-title">Réservez en ligne</h3>
                                 <p className="cta-subtitle">

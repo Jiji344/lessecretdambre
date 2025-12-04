@@ -21,14 +21,34 @@
     margin: 0 auto;
 }
 
-.reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+.reviews-scroller {
+    width: 100%;
+    overflow: hidden;
+    padding: var(--spacing-md) 0;
+    mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+}
+
+.reviews-track {
+    display: flex;
     gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
+    width: max-content;
+    animation: scroll 120s linear infinite;
+}
+
+.reviews-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 .review-card {
+    width: 350px;
+    flex-shrink: 0;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(213, 175, 9, 0.2);
@@ -36,6 +56,17 @@
     padding: var(--spacing-md);
     transition: var(--transition-smooth);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    /* Styles pour le lien */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    height: auto;
+    /* Hauteur auto pour s'adapter au contenu, ou fixe si on veut aligner */
+    min-height: 250px;
+    /* Hauteur min pour uniformité */
 }
 
 .review-card:hover {
@@ -69,12 +100,26 @@
     margin-bottom: var(--spacing-md);
 }
 
+.review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid rgba(213, 175, 9, 0.2);
+}
+
 .review-author {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    padding-top: var(--spacing-sm);
-    border-top: 1px solid rgba(213, 175, 9, 0.2);
+    align-items: flex-end;
+    /* Alignement à droite pour le nom */
+    gap: 2px;
+}
+
+.review-google-icon {
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
 }
 
 .review-name {

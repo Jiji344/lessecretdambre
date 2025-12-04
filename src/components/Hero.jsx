@@ -6,9 +6,20 @@ const Hero = () => {
     useParallax('hero-content', 0.3);
 
     const scrollToContact = () => {
-        const element = document.getElementById('contact');
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+        // Sur mobile, on défile vers les horaires. Sur desktop, vers la réservation.
+        const targetId = window.innerWidth < 768 ? 'opening-hours' : 'contact-cta';
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            // Ajustement pour le header fixe
+            const headerOffset = 100;
+            const elementPosition = targetSection.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
         }
     };
 

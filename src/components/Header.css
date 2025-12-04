@@ -21,7 +21,7 @@
 /* Glass Container Base Styles (Shared) */
 .glass-container {
     /* Thème Sombre "Glassmorphism" Standard */
-    --lg-bg-color: rgba(15, 15, 20, 0.95);
+    --lg-bg-color: rgba(15, 15, 20, 0.8);
     /* Fond sombre très opaque */
     --lg-highlight: rgba(255, 255, 255, 0.15);
     /* Reflets blancs subtils */
@@ -55,7 +55,7 @@
     /* Remplacement du filtre SVG par un flou standard */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    /* filter: url(#lg-dist);  <-- Supprimé */
+
     isolation: isolate;
     pointer-events: none;
 }
@@ -98,12 +98,23 @@
 
 /* Logo */
 .logo-text {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    color: var(--color-secondary);
     margin: 0;
     cursor: pointer;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
 }
 
 /* Desktop Navigation */
@@ -130,6 +141,7 @@
 
 /* Mobile Navigation Container */
 .nav-mobile-container {
+    --lg-bg-color: rgba(15, 15, 20, 0.98);
     position: absolute;
     top: calc(100% + 10px);
     left: 0;
@@ -141,19 +153,21 @@
 
     visibility: hidden;
     opacity: 0;
-    transform: translateX(-50px);
+    transform: scale(0.95) translateY(-20px);
+    transform-origin: top center;
     pointer-events: none;
 
     transition:
         opacity 0.3s ease,
-        transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+        /* Effet de rebond subtil */
         visibility 0.3s;
 }
 
 .nav-mobile-container.open {
     visibility: visible;
     opacity: 1;
-    transform: translateX(0);
+    transform: scale(1) translateY(0);
     pointer-events: auto;
 }
 

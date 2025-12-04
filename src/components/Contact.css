@@ -84,19 +84,20 @@
 }
 
 /* Schedule */
+/* Schedule */
 .schedule {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 7px;
 }
 
 .schedule-item {
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    font-size: 0.9375rem;
+    font-size: 1rem;
     color: var(--color-text-light);
-    padding: 6px 0;
+    padding: 12px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
