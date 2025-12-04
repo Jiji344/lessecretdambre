@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,6 +16,16 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Scroll to section when hash changes
+  useEffect(() => {
+    if (location.hash && location.pathname === '/') {
+      const sectionId = location.hash.replace('#', '');
+      setTimeout(() => {
+        scrollToSection(sectionId);
+      }, 100);
+    }
+  }, [location]);
 
   const handleCheckboxChange = (e) => {
     setIsMenuOpen(e.target.checked);
@@ -33,73 +46,95 @@ const Header = () => {
     }
   };
 
+  const handleNavClick = (sectionId) => {
+    if (location.pathname !== '/') {
+      navigate(`/#${sectionId}`);
+    } else {
+      scrollToSection(sectionId);
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
-    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="container">
-        <div className="header-content">
-          {/* Logo */}
-          <div className="logo">
-            <h1 className="logo-text" onClick={() => scrollToSection('accueil')}>
-              Les Secrets d'Ambre
-            </h1>
-          </div>
+    <header className={`header-wrapper ${isScrolled ? 'scrolled' : ''}`}>
+      {/* Main Header Bar */}
+      <div className="glass-container header-bar">
+        {/* Glass Layers */}
+        <div className="glass-filter"></div>
+        <div className="glass-overlay"></div>
+        <div className="glass-specular"></div>
 
-          {/* Desktop Navigation */}
-          <nav className="nav-desktop">
-            <button onClick={() => scrollToSection('accueil')} className="nav-link">
-              Accueil
-            </button>
-            <button onClick={() => scrollToSection('about')} className="nav-link">
-              À propos
-            </button>
-            <button onClick={() => scrollToSection('services')} className="nav-link">
-              Services
-            </button>
-            <button onClick={() => scrollToSection('reviews')} className="nav-link">
-              Avis
-            </button>
-            <button onClick={() => scrollToSection('contact')} className="nav-link">
-              Contact
-            </button>
-          </nav>
+        <div className="container glass-content">
+          <div className="header-content">
+            {/* Logo */}
+            <div className="logo">
+              <h1 className="logo-text" onClick={() => handleNavClick('accueil')}>
+                Les Secrets d'Ambre
+              </h1>
+            </div>
 
-          {/* Mobile Menu Burger SVG */}
-          <label className="hamburger">
-            <input
-              type="checkbox"
-              checked={isMenuOpen}
-              onChange={handleCheckboxChange}
-            />
-            <svg viewBox="0 0 32 32">
-              <path
-                className="line line-top-bottom"
-                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
-              />
-              <path className="line" d="M7 16 27 16" />
-            </svg>
-          </label>
-
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <nav className="nav-mobile">
-              <button onClick={() => scrollToSection('accueil')} className="nav-link-mobile">
+            {/* Desktop Navigation */}
+            <nav className="nav-desktop">
+              <button onClick={() => handleNavClick('accueil')} className="nav-link">
                 Accueil
               </button>
-              <button onClick={() => scrollToSection('about')} className="nav-link-mobile">
+              <button onClick={() => handleNavClick('about')} className="nav-link">
                 À propos
               </button>
-              <button onClick={() => scrollToSection('services')} className="nav-link-mobile">
+              <button onClick={() => handleNavClick('services')} className="nav-link">
                 Services
               </button>
-              <button onClick={() => scrollToSection('reviews')} className="nav-link-mobile">
+              <button onClick={() => handleNavClick('reviews')} className="nav-link">
                 Avis
               </button>
-              <button onClick={() => scrollToSection('contact')} className="nav-link-mobile">
+              <button onClick={() => handleNavClick('contact')} className="nav-link">
                 Contact
               </button>
             </nav>
-          )}
+
+            {/* Mobile Menu Burger SVG */}
+            <label className="hamburger">
+              <input
+                type="checkbox"
+                checked={isMenuOpen}
+                onChange={handleCheckboxChange}
+              />
+              <svg viewBox="0 0 32 32">
+                <path
+                  className="line line-top-bottom"
+                  d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+                />
+                <path className="line" d="M7 16 27 16" />
+              </svg>
+            </label>
+          </div>
         </div>
+      </div>
+
+      {/* Mobile Navigation (Separate Glass Container) */}
+      <div className={`glass-container nav-mobile-container ${isMenuOpen ? 'open' : ''}`}>
+        {/* Glass Layers for Mobile Menu */}
+        <div className="glass-filter"></div>
+        <div className="glass-overlay"></div>
+        <div className="glass-specular"></div>
+
+        <nav className="glass-content nav-mobile-content">
+          <button onClick={() => handleNavClick('accueil')} className="nav-link-mobile">
+            Accueil
+          </button>
+          <button onClick={() => handleNavClick('about')} className="nav-link-mobile">
+            À propos
+          </button>
+          <button onClick={() => handleNavClick('services')} className="nav-link-mobile">
+            Services
+          </button>
+          <button onClick={() => handleNavClick('reviews')} className="nav-link-mobile">
+            Avis
+          </button>
+          <button onClick={() => handleNavClick('contact')} className="nav-link-mobile">
+            Contact
+          </button>
+        </nav>
       </div>
     </header>
   );

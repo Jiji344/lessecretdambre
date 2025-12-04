@@ -39,7 +39,7 @@ const ServiceModal = ({ category, onClose }) => {
     return (
         <div className="modal-backdrop" onClick={handleBackdropClick}>
             <div className="modal-content">
-                {/* Close Button */}
+                {/* Close Button - Reste fixe */}
                 <button
                     className="modal-close-btn"
                     onClick={onClose}
@@ -48,53 +48,59 @@ const ServiceModal = ({ category, onClose }) => {
                     <X size={28} />
                 </button>
 
-                {/* Header */}
-                <div className="modal-header">
-                    <div className="modal-header-content">
-                        <h2 className="modal-title">{category.category}</h2>
-                        <div className="modal-icon">
-                            {category.icon}
+                {/* Conteneur Scrollable */}
+                <div className="modal-scroll-container">
+                    {/* Header */}
+                    <div className="modal-header">
+                        <div className="modal-header-content">
+                            <h2 className="modal-title">{category.category}</h2>
+                            <div className="modal-icon">
+                                {category.icon}
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                {/* Description */}
-                {category.description && (
-                    <p className="modal-description">{category.description}</p>
-                )}
+                    {/* Description */}
+                    {category.description && (
+                        <p className="modal-description">{category.description}</p>
+                    )}
 
-                {/* Note (if exists) */}
-                {category.note && (
-                    <div className="modal-note">
-                        <strong>Note importante :</strong> {category.note}
-                    </div>
-                )}
-
-                {/* Separator */}
-                <div className="modal-separator"></div>
-
-                {/* Services List */}
-                <div className="modal-services-list">
-                    {category.services.map((service) => (
-                        <div key={service.id} className="service-item">
-                            <span className="service-name">{service.name}</span>
-                            <span className="service-details">
-                                {service.duration} min • {service.price} €
-                            </span>
+                    {/* Note (if exists) */}
+                    {category.note && (
+                        <div className="modal-note">
+                            <strong>Note importante :</strong> {category.note}
                         </div>
-                    ))}
+                    )}
+
+                    {/* Separator */}
+                    <div className="modal-separator"></div>
+
+                    {/* Services List */}
+                    <div className="modal-services-list">
+                        {category.services.map((service) => (
+                            <div key={service.id} className="service-item">
+                                <span className="service-name">{service.name}</span>
+                                <span className="service-details">
+                                    {service.duration} min • {service.price} €
+                                </span>
+                            </div>
+                        ))}
+                    </div>
+
                 </div>
 
-                {/* Booking Button */}
-                <a
-                    href="https://www.planity.com/les-secrets-dambre-epilation-miel-bio-caramel-orientale-soin-peaux-noires-34090-montpellier"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="modal-booking-btn"
-                >
-                    <span>Réserver sur Planity</span>
-                    <ExternalLink size={18} />
-                </a>
+                {/* Fixed Booking Button Footer */}
+                <div className="modal-footer">
+                    <a
+                        href="https://www.planity.com/les-secrets-dambre-epilation-miel-bio-caramel-orientale-soin-peaux-noires-34090-montpellier"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="modal-booking-btn"
+                    >
+                        <span>Réserver sur Planity</span>
+                        <ExternalLink size={18} />
+                    </a>
+                </div>
             </div>
         </div>
     );

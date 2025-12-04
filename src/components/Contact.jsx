@@ -1,22 +1,35 @@
 import { MapPin, Phone, Mail, Clock, Instagram } from 'lucide-react';
-import useScrollAnimation from '../hooks/useScrollAnimation';
 import './Contact.css';
 
 const Contact = () => {
-    // Trigger scroll animations when section enters viewport
-    useScrollAnimation({ threshold: 0.1, triggerOnce: true });
+    const scheduleData = [
+        { day: 'Lundi', hours: '13h00 - 18h00' },
+        { day: 'Mardi', hours: '10h00 - 21h00' },
+        { day: 'Mercredi', hours: '10h00 - 18h00' },
+        { day: 'Jeudi', hours: '10h00 - 18h00' },
+        { day: 'Vendredi', hours: '10h00 - 18h00' },
+        { day: 'Samedi', hours: '10h00 - 18h00' },
+        { day: 'Dimanche', hours: 'Fermé', closed: true }
+    ];
+
+    const handlePlanityClick = () => {
+        window.open('https://www.planity.com/les-secrets-dambre-epilation-miel-bio-caramel-orientale-soin-peaux-noires-34090-montpellier', '_blank', 'noopener,noreferrer');
+    };
 
     return (
-        <section id="contact" className="contact section">
+        <section id="contact" className="contact">
             <div className="container">
-                <div className="contact-header text-center mb-4">
-                    <h2 className="text-primary" data-animate="scale">Nous Contacter</h2>
-                    <div className="underline"></div>
+                <div className="contact-header section-header">
+                    <h2 className="section-title">Nous Contacter</h2>
+                    <p className="section-subtitle">
+                        Nous sommes à votre écoute pour répondre à vos questions et prendre rendez-vous
+                    </p>
                 </div>
 
                 <div className="contact-grid">
-                    {/* Colonne Gauche - Informations */}
-                    <div className="contact-info" data-animate="fade-left">
+                    {/* Left Column - Contact Information (without schedule) */}
+                    <div className="contact-info">
+                        {/* Address */}
                         <div className="info-item">
                             <div className="info-icon">
                                 <MapPin size={24} />
@@ -24,26 +37,30 @@ const Contact = () => {
                             <div className="info-text">
                                 <h3>Adresse</h3>
                                 <a
-                                    href="https://maps.google.com/maps?q=17+Rue+Lunaret+34090+Montpellier"
+                                    href="https://www.google.com/maps/place/17+Rue+Lunaret,+34090+Montpellier"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="info-link"
                                 >
-                                    17 Rue Lunaret, 34090 Montpellier
+                                    17 Rue Lunaret<br />34090 Montpellier
                                 </a>
                             </div>
                         </div>
 
+                        {/* Phone */}
                         <div className="info-item">
                             <div className="info-icon">
                                 <Phone size={24} />
                             </div>
                             <div className="info-text">
                                 <h3>Téléphone</h3>
-                                <a href="tel:+33662360108" className="info-link">06 62 36 01 08</a>
+                                <a href="tel:+33662360108" className="info-link">
+                                    06 62 36 01 08
+                                </a>
                             </div>
                         </div>
 
+                        {/* Email */}
                         <div className="info-item">
                             <div className="info-icon">
                                 <Mail size={24} />
@@ -56,45 +73,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="info-item">
-                            <div className="info-icon">
-                                <Clock size={24} />
-                            </div>
-                            <div className="info-text">
-                                <h3>Horaires</h3>
-                                <div className="schedule">
-                                    <div className="schedule-item">
-                                        <span>Lundi</span>
-                                        <span>13h00 - 18h00</span>
-                                    </div>
-                                    <div className="schedule-item">
-                                        <span>Mardi</span>
-                                        <span>10h00 - 21h00</span>
-                                    </div>
-                                    <div className="schedule-item">
-                                        <span>Mercredi</span>
-                                        <span>10h00 - 18h00</span>
-                                    </div>
-                                    <div className="schedule-item">
-                                        <span>Jeudi</span>
-                                        <span>10h00 - 18h00</span>
-                                    </div>
-                                    <div className="schedule-item">
-                                        <span>Vendredi</span>
-                                        <span>10h00 - 18h00</span>
-                                    </div>
-                                    <div className="schedule-item">
-                                        <span>Samedi</span>
-                                        <span>10h00 - 18h00</span>
-                                    </div>
-                                    <div className="schedule-item closed">
-                                        <span>Dimanche</span>
-                                        <span>Fermé</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        {/* Instagram */}
                         <div className="info-item">
                             <div className="info-icon">
                                 <Instagram size={24} />
@@ -102,7 +81,7 @@ const Contact = () => {
                             <div className="info-text">
                                 <h3>Instagram</h3>
                                 <a
-                                    href="https://www.instagram.com/lessecretsdambre/"
+                                    href="https://www.instagram.com/lessecretsdambre"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="info-link"
@@ -113,23 +92,46 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    {/* Colonne Droite - CTA */}
-                    <div className="contact-cta" data-animate="fade-right" data-animate-delay="1">
-                        <div className="cta-card">
-                            <h3 className="cta-title">Prêt(e) à vous transformer ?</h3>
-                            <p className="cta-subtitle">Réservez votre première séance maintenant</p>
-                            <a
-                                href="https://www.planity.com/les-secrets-dambre-epilation-miel-bio-caramel-orientale-soin-peaux-noires-34090-montpellier"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-primary cta-button"
-                                aria-label="Ouvrir Planity dans un nouvel onglet"
-                            >
-                                Réserver en Ligne
-                            </a>
-                            <p className="cta-note">
-                                Réservation en ligne simple et rapide via Planity
-                            </p>
+                    {/* Right Column - Schedule + CTA Card */}
+                    <div className="contact-right-column">
+                        {/* Schedule */}
+                        <div className="info-item schedule-block">
+                            <div className="info-icon">
+                                <Clock size={24} />
+                            </div>
+                            <div className="info-text">
+                                <h3>Horaires d'ouverture</h3>
+                                <div className="schedule">
+                                    {scheduleData.map((item, index) => (
+                                        <div
+                                            key={index}
+                                            className={`schedule-item ${item.closed ? 'closed' : ''}`}
+                                        >
+                                            <span>{item.day}</span>
+                                            <span>{item.hours}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* CTA Card */}
+                        <div className="contact-cta">
+                            <div className="cta-card">
+                                <h3 className="cta-title">Réservez en ligne</h3>
+                                <p className="cta-subtitle">
+                                    Prenez rendez-vous en quelques clics sur Planity
+                                </p>
+                                <button
+                                    onClick={handlePlanityClick}
+                                    className="cta-button btn-primary"
+                                >
+                                    Réserver sur Planity
+                                </button>
+                                <p className="cta-note">
+                                    Réponse rapide garantie • Confirmation immédiate
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

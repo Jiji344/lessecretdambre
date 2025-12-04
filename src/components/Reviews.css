@@ -1,5 +1,5 @@
 .reviews {
-    background-color: var(--color-primary);
+    background-color: var(--color-background);
     padding: var(--spacing-xl) 0;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .reviews-subtitle {
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--color-text-light);
     font-size: 1.125rem;
     max-width: 600px;
     margin: 0 auto;
@@ -29,19 +29,20 @@
 }
 
 .review-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(201, 165, 92, 0.25);
+    border: 1px solid rgba(213, 175, 9, 0.2);
     border-radius: var(--radius-lg);
     padding: var(--spacing-md);
     transition: var(--transition-smooth);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .review-card:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.8);
     border-color: var(--color-secondary);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .review-stars {
@@ -50,7 +51,8 @@
 
 .star {
     font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(0, 0, 0, 0.1);
+    /* Etoiles vides plus sombres */
     margin-right: 2px;
 }
 
@@ -59,7 +61,8 @@
 }
 
 .review-text {
-    color: rgba(255, 255, 255, 0.95);
+    color: var(--color-text);
+    /* Texte NOIR */
     font-size: 1rem;
     line-height: 1.7;
     font-style: italic;
@@ -71,7 +74,7 @@
     flex-direction: column;
     gap: 4px;
     padding-top: var(--spacing-sm);
-    border-top: 1px solid rgba(231, 180, 45, 0.2);
+    border-top: 1px solid rgba(213, 175, 9, 0.2);
 }
 
 .review-name {
@@ -81,7 +84,8 @@
 }
 
 .review-service {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--color-text-light);
+    /* Gris foncé */
     font-size: 0.875rem;
 }
 
@@ -95,4 +99,3 @@
         padding: var(--spacing-sm);
     }
 }
-

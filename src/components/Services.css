@@ -10,6 +10,7 @@
 .services-header h2 {
     font-size: clamp(2rem, 4vw, 2.5rem);
     margin-bottom: var(--spacing-sm);
+    color: var(--color-secondary);
 }
 
 .services-subtitle {
@@ -29,13 +30,15 @@
     margin-top: var(--spacing-xl);
 }
 
-/* Service Card */
+/* Service Card - Glassmorphism Light */
 .service-card {
-    background-color: var(--color-white);
-    border: 2px solid var(--color-secondary);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(213, 175, 9, 0.2);
     border-radius: 12px;
     padding: 24px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
@@ -53,15 +56,16 @@
     left: 0;
     width: 100%;
     height: 4px;
-    background: var(--color-primary);
+    background: linear-gradient(90deg, #d5af09, #f4e4c1);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
 .service-card:hover {
-    border-color: var(--color-primary);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    transform: scale(1.02);
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.9);
+    border-color: var(--color-secondary);
+    box-shadow: 0 12px 32px rgba(213, 175, 9, 0.15);
 }
 
 .service-card:hover::before {
@@ -76,19 +80,25 @@
     align-items: center;
     justify-content: center;
     margin-bottom: var(--spacing-md);
-    background: rgba(201, 165, 92, 0.1);
+    background: rgba(213, 175, 9, 0.1);
     border-radius: 50%;
     transition: all 0.3s ease;
+    border: 1px solid rgba(213, 175, 9, 0.3);
 }
 
 .service-card:hover .service-icon-wrapper {
     transform: scale(1.1) rotate(5deg);
-    background: rgba(201, 165, 92, 0.2);
+    background: rgba(213, 175, 9, 0.2);
+    border-color: #e6bd0a;
+    box-shadow: 0 0 15px rgba(213, 175, 9, 0.2);
 }
 
 .service-icon-wrapper svg {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
+    color: #d5af09;
+    /* Or plus soutenu pour le contraste sur fond clair */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 /* Service Title */
@@ -96,6 +106,7 @@
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--color-text);
+    /* Sombre */
     margin-bottom: var(--spacing-sm);
     font-family: var(--font-heading);
     min-height: 2.5em;
@@ -107,7 +118,7 @@
 /* Service Info */
 .service-info {
     font-size: 0.875rem;
-    color: var(--color-text-muted);
+    color: var(--color-text-light);
     margin-bottom: var(--spacing-xs);
 }
 
@@ -115,18 +126,18 @@
 .service-price {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--color-primary);
+    color: var(--color-secondary);
     margin-bottom: var(--spacing-md);
 }
 
 /* View All Button */
 .btn-view-all {
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
+    background-color: transparent;
+    color: var(--color-secondary);
     font-weight: 600;
     padding: 10px 16px;
-    border: none;
-    border-radius: 6px;
+    border: 1px solid var(--color-secondary);
+    border-radius: 50px;
     cursor: pointer;
     transition: all 0.2s ease;
     font-size: 0.9rem;
@@ -137,10 +148,10 @@
 }
 
 .btn-view-all:hover {
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
+    background-color: var(--color-secondary);
+    color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 12px rgba(213, 175, 9, 0.3);
 }
 
 .btn-view-all:active {
@@ -206,8 +217,8 @@
     }
 
     .service-icon-wrapper svg {
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
     }
 
     .service-title {

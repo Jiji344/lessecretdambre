@@ -23,6 +23,22 @@
     gap: 32px;
 }
 
+/* Right Column - Schedule + CTA */
+.contact-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.schedule-block {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(213, 175, 9, 0.2);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
 .info-item {
     display: flex;
     gap: 20px;
@@ -33,24 +49,31 @@
     flex-shrink: 0;
     width: 48px;
     height: 48px;
-    background: var(--color-primary);
+    background: rgba(213, 175, 9, 0.1);
+    border: 1px solid var(--color-secondary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-white);
+    color: var(--color-secondary);
+}
+
+.info-text {
+    flex: 1;
+    /* Prend tout l'espace disponible */
 }
 
 .info-text h3 {
     font-size: 1.125rem;
     font-weight: 600;
-    color: var(--color-primary);
+    color: var(--color-secondary);
     margin-bottom: 8px;
     font-family: var(--font-heading);
 }
 
 .info-link {
-    color: var(--color-text-light);
+    color: var(--color-text);
+    /* Sombre */
     text-decoration: none;
     transition: color 0.2s ease;
     font-size: 0.9375rem;
@@ -74,16 +97,21 @@
     font-size: 0.9375rem;
     color: var(--color-text-light);
     padding: 6px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
 }
 
 .schedule-item span:first-child {
     font-weight: 500;
-    color: var(--color-text);
+    color: var(--color-secondary);
     min-width: 80px;
 }
 
 .schedule-item.closed span {
-    color: #999;
+    color: var(--color-text-muted);
     font-style: italic;
 }
 
@@ -95,48 +123,77 @@
 }
 
 .cta-card {
-    background: var(--color-white);
-    border: 2px solid var(--color-secondary);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(213, 175, 9, 0.2);
     border-radius: 16px;
     padding: 40px;
     text-align: center;
     width: 100%;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
 
 .cta-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.9);
+    border-color: var(--color-secondary);
+    box-shadow: 0 12px 32px rgba(213, 175, 9, 0.15);
 }
 
 .cta-title {
     font-size: 1.75rem;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-secondary);
     margin-bottom: 12px;
     font-family: var(--font-heading);
 }
 
 .cta-subtitle {
     font-size: 1.125rem;
-    color: var(--color-text-light);
+    color: var(--color-text);
+    /* Sombre */
     margin-bottom: 32px;
 }
 
+/* Bouton Planity - Style Simple Gold Arrondi */
 .cta-button {
     width: 100%;
     padding: 16px 32px;
     font-size: 1rem;
+    font-weight: 600;
     margin-bottom: 16px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
+    /* Style Gold Simple */
+    background-color: var(--color-secondary);
+    color: #ffffff;
+    /* Texte blanc sur bouton or */
+    /* Texte sombre pour contraste */
+    border: none;
+
+    /* Bords Arrondis */
+    border-radius: 50px;
+
+    /* Pas d'ombre par défaut */
+    box-shadow: none !important;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #e6bd0a;
+    /* Gold un peu plus clair */
+    transform: translateY(-2px);
+    box-shadow: none !important;
 }
 
 .cta-note {
     font-size: 0.875rem;
-    color: #666;
+    color: var(--color-text-muted);
     margin-top: 16px;
 }
 
