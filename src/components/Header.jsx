@@ -69,7 +69,7 @@ const Header = () => {
             {/* Logo */}
             <div className="logo">
               <h1 className="logo-text" onClick={() => handleNavClick('accueil')}>
-                <img src="/asset/logo/logo.png" alt="Les Secrets d'Ambre" className="logo-image" width="45" height="50" fetchpriority="high" />
+                <img src="/asset/logo/logo.png" alt="Les Secrets d'Ambre" className="logo-image" />
               </h1>
             </div>
 
