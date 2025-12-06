@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url('/asset/avis/Avis.png') center center / cover no-repeat;
+    background: url('/asset/avis/Avis.webp') center center / cover no-repeat;
     overflow: hidden;
     padding: 0;
 }

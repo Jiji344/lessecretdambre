@@ -5,7 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('/asset/hero/Hero/hero.jpg') center center / cover no-repeat;
+    background: image-set(
+        url('/asset/hero/Hero/hero.webp') type('image/webp'),
+        url('/asset/hero/Hero/hero.jpg') type('image/jpeg')
+    ) center center / cover no-repeat;
     overflow: hidden;
     margin-bottom: 200px;
 }
@@ -121,12 +124,12 @@
         align-items: flex-start;
         /* Aligner le contenu vers le haut */
         /* Ajustement pour voir les gouttes à droite */
-        background: url('/asset/hero/Hero/Hero mobile.jpg') center center / cover no-repeat;
+        background: url('/asset/hero/Hero/Hero-mobile.webp') center center / cover no-repeat;
     }
 
     .hero-content {
         width: 100%;
-        margin-top: 320px;
+        margin-top: 260px;
         /* Remonte le contenu au maximum */
     }
 
@@ -145,7 +148,7 @@
         padding: 1rem 2rem;
         width: 80%;
         max-width: 300px;
-        margin-top: 3rem;
+        margin-top: 2rem;
         /* Remonté légèrement */
     }
 }
