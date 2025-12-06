@@ -11,8 +11,8 @@ const Hero = () => {
         const targetSection = document.getElementById(targetId);
 
         if (targetSection) {
-            // Ajustement pour le header fixe
-            const headerOffset = 100;
+            // Même offset que le bouton Contact du header
+            const headerOffset = 80;
             const elementPosition = targetSection.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
