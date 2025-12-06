@@ -195,21 +195,11 @@ a:hover {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(201, 165, 92, 0.2);
-  /* Bordure or subtile */
   border-radius: var(--radius-lg);
   padding: var(--spacing-md);
-  transition: var(--transition-smooth);
   box-shadow: var(--shadow-sm);
-  /* Correction Texture */
   position: relative;
   z-index: 5;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.08);
-  border-color: var(--color-secondary);
-  box-shadow: var(--shadow-lg);
 }
 
 /* Utility Classes */

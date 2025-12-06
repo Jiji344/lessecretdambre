@@ -20,7 +20,8 @@
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 90px;
+    justify-content: center;
 }
 
 /* Right Column - Schedule + CTA */
@@ -30,6 +31,7 @@
     gap: 32px;
 }
 
+/* Schedule Block */
 .schedule-block {
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
@@ -39,12 +41,14 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }
 
+/* Info Item */
 .info-item {
     display: flex;
     gap: 20px;
-    align-items: flex-start;
+    align-items: center;
 }
 
+/* Info Icon */
 .info-icon {
     flex-shrink: 0;
     width: 48px;
@@ -58,9 +62,9 @@
     color: var(--color-secondary);
 }
 
+/* Info Text */
 .info-text {
     flex: 1;
-    /* Prend tout l'espace disponible */
 }
 
 .info-text h3 {
@@ -71,34 +75,35 @@
     font-family: var(--font-heading);
 }
 
+/* Info Link */
 .info-link {
     color: var(--color-text);
-    /* Sombre */
     text-decoration: none;
-    transition: color 0.2s ease;
     font-size: 0.9375rem;
+    display: inline-block;
+    transition: transform 0.2s ease;
 }
 
 .info-link:hover {
-    color: var(--color-secondary);
+    color: var(--color-text);
+    transform: scale(1.03);
 }
 
-/* Schedule */
 /* Schedule */
 .schedule {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 0;
 }
 
 .schedule-item {
     display: flex;
     justify-content: space-between;
-    gap: 24px;
-    font-size: 1rem;
+    gap: 16px;
+    font-size: 0.9rem;
     color: var(--color-text-light);
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .schedule-item:last-child {
@@ -108,7 +113,7 @@
 .schedule-item span:first-child {
     font-weight: 500;
     color: var(--color-secondary);
-    min-width: 80px;
+    min-width: 70px;
 }
 
 .schedule-item.closed span {
@@ -116,30 +121,30 @@
     font-style: italic;
 }
 
-/* CTA Card */
+/* CTA Container */
 .contact-cta {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* CTA Card - Animation au hover */
 .cta-card {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(213, 175, 9, 0.2);
+    border: 1px solid rgba(213, 175, 9, 0.3);
     border-radius: 16px;
     padding: 40px;
     text-align: center;
     width: 100%;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 24px rgba(213, 175, 9, 0.1);
     transition: all 0.3s ease;
 }
 
 .cta-card:hover {
-    transform: translateY(-4px);
-    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(213, 175, 9, 0.25);
     border-color: var(--color-secondary);
-    box-shadow: 0 12px 32px rgba(213, 175, 9, 0.15);
 }
 
 .cta-title {
@@ -148,16 +153,19 @@
     color: var(--color-secondary);
     margin-bottom: 12px;
     font-family: var(--font-heading);
+    position: relative;
+    z-index: 1;
 }
 
 .cta-subtitle {
     font-size: 1.125rem;
     color: var(--color-text);
-    /* Sombre */
     margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
 }
 
-/* Bouton Planity - Style Simple Gold Arrondi */
+/* Bouton Planity - Animation au hover */
 .cta-button {
     width: 100%;
     padding: 16px 32px;
@@ -167,35 +175,48 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
-    /* Style Gold Simple */
-    background-color: var(--color-secondary);
+    background: linear-gradient(135deg, var(--color-secondary) 0%, #e6c84a 100%);
     color: #ffffff;
-    /* Texte blanc sur bouton or */
-    /* Texte sombre pour contraste */
     border: none;
-
-    /* Bords Arrondis */
     border-radius: 50px;
-
-    /* Pas d'ombre par défaut */
-    box-shadow: none !important;
-
-    transition: all 0.3s ease;
     cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(213, 175, 9, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    transition: left 0.5s ease;
 }
 
 .cta-button:hover {
-    background-color: #e6bd0a;
-    /* Gold un peu plus clair */
-    transform: translateY(-2px);
-    box-shadow: none !important;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(213, 175, 9, 0.4);
+}
+
+.cta-button:hover::before {
+    left: 100%;
 }
 
 .cta-note {
     font-size: 0.875rem;
     color: var(--color-text-muted);
     margin-top: 16px;
+    position: relative;
+    z-index: 1;
 }
 
 /* Responsive Design */
@@ -241,8 +262,8 @@
     }
 
     .info-icon svg {
-        width: 20px !important;
-        height: 20px !important;
+        width: 20px;
+        height: 20px;
     }
 
     .info-text h3 {
