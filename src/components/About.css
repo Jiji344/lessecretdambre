@@ -1,142 +1,229 @@
 /* About Section */
 .about {
-    background-color: var(--color-white);
-    padding: 80px 0;
+    background-color: var(--color-background);
+    /* Fond légèrement crème pour contraster avec les cartes blanches */
+    padding: 100px 0;
+    position: relative;
 }
 
 .about-header {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
 }
 
 .about-content {
     max-width: 800px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 2;
 }
 
 .about-description {
-    font-size: 1.125rem;
-    line-height: 1.8;
+    font-size: 1.15rem;
+    line-height: 1.9;
     color: var(--color-text-light);
     margin-bottom: var(--spacing-md);
     text-align: center;
+    font-weight: 300;
 }
 
 /* Features Grid */
 .features-grid {
-    gap: 30px;
+    gap: 40px;
     margin-top: 60px;
+    padding: 0 20px;
 }
 
+/* === NOUVEAU DESIGN CARTE "PRÉCIEUSE" === */
+
 .feature-card {
-    background-color: var(--color-background);
-    padding: 30px;
-    border-radius: var(--radius-lg);
+    background: #ffffff;
+    padding: 50px 30px;
+    border-radius: 4px;
+    /* Angles moins arrondis pour plus d'élégance */
     text-align: center;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 2px solid transparent;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
     position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.03);
     overflow: hidden;
 }
 
+/* Double bordure décorative interne */
+.feature-card::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 1px solid rgba(213, 175, 9, 0.3);
+    /* Bordure or fine */
+    pointer-events: none;
+    transition: all 0.5s ease;
+    opacity: 0.5;
+}
+
+/* Effet de fond au hover */
 .feature-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 4px;
-    background: var(--color-primary);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(213, 175, 9, 0.08) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
 }
 
+/* Hover State Card */
 .feature-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-15px);
+    box-shadow: 0 20px 60px rgba(26, 26, 26, 0.08);
+    border-color: rgba(213, 175, 9, 0.2);
+}
+
+.feature-card:hover::after {
     border-color: var(--color-secondary);
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    opacity: 1;
 }
 
 .feature-card:hover::before {
-    transform: scaleX(1);
+    opacity: 1;
 }
 
-/* Feature Icon */
+/* Feature Icon Container */
 .feature-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto var(--spacing-md);
-    background: var(--color-primary);
-    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-white);
-    transition: all 0.3s ease;
+    border-radius: 50%;
+    background: #ffffff;
+    position: relative;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+/* Cercle décoratif rotatif autour de l'icône */
+.feature-icon::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 1px dashed rgba(213, 175, 9, 0.4);
+    border-radius: 50%;
+    transition: all 0.8s ease;
+}
+
+/* Cercle solide interne */
+.feature-icon::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(213, 175, 9, 0.1);
+    transition: all 0.5s ease;
+}
+
+.feature-card:hover .feature-icon::before {
+    transform: rotate(180deg) scale(0.9);
+    border-color: var(--color-secondary);
+    border-style: solid;
+    border-width: 1px;
 }
 
 .feature-card:hover .feature-icon {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(213, 175, 9, 0.15);
 }
 
+.feature-icon img {
+    transition: all 0.3s ease;
+    /* Assure que l'image reste nette */
+    backface-visibility: hidden;
+}
+
+/* Typography */
 .feature-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--color-primary);
-    margin-bottom: var(--spacing-sm);
+    font-family: var(--font-heading);
+    /* Alzaina */
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    position: relative;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+/* Petite ligne décorative sous le titre */
+.feature-title::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: rgba(213, 175, 9, 0.3);
+    margin: 15px auto 0;
+    transition: all 0.4s ease;
+}
+
+.feature-card:hover .feature-title {
+    color: #1a1a1a;
+}
+
+.feature-card:hover .feature-title::after {
+    width: 80px;
+    background-color: var(--color-secondary);
 }
 
 .feature-description {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--color-text-light);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.8;
+    color: #666;
+    font-weight: 400;
 }
 
 /* Responsive Design */
 @media (max-width: 1023px) {
-    .about {
-        padding: 60px 0;
-    }
-
     .features-grid {
-        gap: 24px;
-        margin-top: 40px;
+        gap: 30px;
     }
 
     .feature-card {
-        padding: 24px;
+        padding: 40px 20px;
     }
 }
 
 @media (max-width: 767px) {
     .about {
-        padding: 40px 0;
+        padding: 60px 0;
     }
 
-    .about-description {
-        font-size: 1rem;
-    }
-
-    .features-grid {
-        gap: 20px;
+    .feature-card {
+        margin-bottom: 20px;
+        padding: 30px 20px;
     }
 
     .feature-icon {
-        width: 60px;
-        height: 60px;
-    }
-
-    .feature-icon svg {
-        width: 32px !important;
-        height: 32px !important;
+        width: 70px;
+        height: 70px;
     }
 
     .feature-title {
-        font-size: 1.25rem;
-    }
-
-    .feature-description {
-        font-size: 0.9375rem;
+        font-size: 1.75rem;
     }
 }

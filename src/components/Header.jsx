@@ -36,7 +36,12 @@ const Header = () => {
     if (element) {
       const headerHeight = 80;
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-      const offsetPosition = elementPosition - headerHeight;
+      let offsetPosition = elementPosition - headerHeight;
+
+      // Ajustement spécifique pour la section Avis pour cacher la marge blanche
+      if (sectionId === 'reviews') {
+        offsetPosition += 80;
+      }
 
       window.scrollTo({
         top: offsetPosition,
@@ -57,20 +62,15 @@ const Header = () => {
 
   return (
     <header className={`header-wrapper ${isScrolled ? 'scrolled' : ''}`}>
-      {/* Main Header Bar */}
-      <div className="glass-container header-bar">
-        {/* Glass Layers */}
-        <div className="glass-filter"></div>
-        <div className="glass-overlay"></div>
-        <div className="glass-specular"></div>
-
-        <div className="container glass-content">
+      <div className="container">
+        <div className="header-bar">
           <div className="header-content">
             {/* Logo */}
             <div className="logo">
               <h1 className="logo-text" onClick={() => handleNavClick('accueil')}>
                 <img src="/asset/logo/logo.png" alt="Les Secrets d'Ambre" className="logo-image" />
               </h1>
+              <span className="logo-subtitle">Institut de beauté Montpellier</span>
             </div>
 
             {/* Desktop Navigation */}
@@ -87,7 +87,7 @@ const Header = () => {
               <button onClick={() => handleNavClick('reviews')} className="nav-link">
                 Avis
               </button>
-              <button onClick={() => handleNavClick('contact')} className="nav-link">
+              <button onClick={() => handleNavClick('opening-hours')} className="nav-link">
                 Contact
               </button>
             </nav>
@@ -111,14 +111,9 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation (Separate Glass Container) */}
-      <div className={`glass-container nav-mobile-container ${isMenuOpen ? 'open' : ''}`}>
-        {/* Glass Layers for Mobile Menu */}
-        <div className="glass-filter"></div>
-        <div className="glass-overlay"></div>
-        <div className="glass-specular"></div>
-
-        <nav className="glass-content nav-mobile-content">
+      {/* Mobile Navigation */}
+      <div className={`nav-mobile-container ${isMenuOpen ? 'open' : ''}`}>
+        <nav className="nav-mobile-content">
           <button onClick={() => handleNavClick('accueil')} className="nav-link-mobile">
             Accueil
           </button>
@@ -131,7 +126,7 @@ const Header = () => {
           <button onClick={() => handleNavClick('reviews')} className="nav-link-mobile">
             Avis
           </button>
-          <button onClick={() => handleNavClick('contact')} className="nav-link-mobile">
+          <button onClick={() => handleNavClick('opening-hours')} className="nav-link-mobile">
             Contact
           </button>
         </nav>

@@ -98,6 +98,7 @@ const Services = () => {
                                 data-animate-delay={Math.min(index + 1, 20)}
                             >
                                 <div className="service-icon-wrapper">
+                                    {/* Forcer la taille de l'icône via style inline si nécessaire, mais le CSS gère déjà */}
                                     {iconMap[category.id]}
                                 </div>
                                 <h3 className="service-title">{category.category}</h3>

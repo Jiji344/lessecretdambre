@@ -31,9 +31,14 @@ const Contact = () => {
                     <div className="contact-info">
                         {/* Address */}
                         <div className="info-item">
-                            <div className="info-icon">
+                            <a
+                                href="https://www.google.com/maps/place/17+Rue+Lunaret,+34090+Montpellier"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="info-icon"
+                            >
                                 <MapPin size={24} />
-                            </div>
+                            </a>
                             <div className="info-text">
                                 <h3>Adresse</h3>
                                 <a
@@ -49,9 +54,9 @@ const Contact = () => {
 
                         {/* Phone */}
                         <div className="info-item">
-                            <div className="info-icon">
+                            <a href="tel:+33662360108" className="info-icon">
                                 <Phone size={24} />
-                            </div>
+                            </a>
                             <div className="info-text">
                                 <h3>Téléphone</h3>
                                 <a href="tel:+33662360108" className="info-link">
@@ -62,9 +67,9 @@ const Contact = () => {
 
                         {/* Email */}
                         <div className="info-item">
-                            <div className="info-icon">
+                            <a href="mailto:contact@lessecretsdambre.fr" className="info-icon">
                                 <Mail size={24} />
-                            </div>
+                            </a>
                             <div className="info-text">
                                 <h3>Email</h3>
                                 <a href="mailto:contact@lessecretsdambre.fr" className="info-link">
@@ -75,9 +80,14 @@ const Contact = () => {
 
                         {/* Instagram */}
                         <div className="info-item">
-                            <div className="info-icon">
+                            <a
+                                href="https://www.instagram.com/lessecretsdambre"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="info-icon"
+                            >
                                 <Instagram size={24} />
-                            </div>
+                            </a>
                             <div className="info-text">
                                 <h3>Instagram</h3>
                                 <a
@@ -93,9 +103,14 @@ const Contact = () => {
 
                         {/* Facebook */}
                         <div className="info-item">
-                            <div className="info-icon">
+                            <a
+                                href="https://www.facebook.com/lessecrets.ambre"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="info-icon"
+                            >
                                 <Facebook size={24} />
-                            </div>
+                            </a>
                             <div className="info-text">
                                 <h3>Facebook</h3>
                                 <a
