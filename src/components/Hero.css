@@ -131,7 +131,7 @@
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 1.2;
     }
 
@@ -145,7 +145,7 @@
         padding: 1rem 2rem;
         width: 80%;
         max-width: 300px;
-        margin-top: 5rem;
-        /* Descendre le bouton */
+        margin-top: 3rem;
+        /* Remonté légèrement */
     }
 }
