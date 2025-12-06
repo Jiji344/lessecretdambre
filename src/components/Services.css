@@ -7,6 +7,10 @@
     padding: 0 20px;
 }
 
+.services {
+    border-top: 10px solid #621509;
+}
+
 /* Service Card - Design "Précieux" */
 .service-card {
     background: #ffffff;
@@ -232,10 +236,12 @@
 
     .services {
         padding: 60px 0;
+        border-top: 10px solid #621509;
     }
 
     .service-card {
-        margin-bottom: 20px;
+        margin-bottom: 0px;
+        /* Réduit de 20px à 15px */
         padding: 30px 20px;
     }
 
