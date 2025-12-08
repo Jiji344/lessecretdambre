@@ -8,7 +8,9 @@
     justify-content: center;
     background: url('/asset/avis/Avis.webp') center center / cover no-repeat;
     overflow: hidden;
-    padding: 0;
+    padding: 10px 0;
+    border-top: 10px solid #621509;
+    border-bottom: 10px solid #621509;
 }
 
 .reviews-header h2 {
@@ -148,6 +150,8 @@
         height: auto;
         min-height: 100vh;
         padding: 60px 0;
+        border-top: 10px solid #621509;
+        border-bottom: 10px solid #621509;
     }
 
     .reviews-grid {
