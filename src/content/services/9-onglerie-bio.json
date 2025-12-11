@@ -1,0 +1,249 @@
+{
+  "id": 9,
+  "category": "Onglerie Bio",
+  "description": "Service inclus dans Mains et Pieds",
+  "startingPrice": 5,
+  "services": [
+    {
+      "id": 901,
+      "name": "Pose vernis bio classique",
+      "duration": 30,
+      "price": 20
+    },
+    {
+      "id": 902,
+      "name": "French manucure bio",
+      "duration": 45,
+      "price": 35
+    },
+    {
+      "id": 903,
+      "name": "Déco simple par ongle",
+      "duration": 5,
+      "price": 5
+    },
+    {
+      "id": 904,
+      "name": "Nail art complexe par ongle",
+      "duration": 10,
+      "price": 8
+    },
+    {
+      "id": 905,
+      "name": "Gainage bio mains",
+      "duration": 60,
+      "price": 55
+    },
+    {
+      "id": 906,
+      "name": "Gainage bio pieds",
+      "duration": 60,
+      "price": 55
+    },
+    {
+      "id": 907,
+      "name": "Réparation ongle cassé",
+      "duration": 15,
+      "price": 12
+    },
+    {
+      "id": 908,
+      "name": "Renforcement fibre de verre",
+      "duration": 45,
+      "price": 45
+    },
+    {
+      "id": 909,
+      "name": "Baby boomer mains",
+      "duration": 75,
+      "price": 65
+    },
+    {
+      "id": 910,
+      "name": "Baby boomer pieds",
+      "duration": 75,
+      "price": 60
+    },
+    {
+      "id": 911,
+      "name": "Ombré powder mains",
+      "duration": 75,
+      "price": 70
+    },
+    {
+      "id": 912,
+      "name": "Chrome effect",
+      "duration": 60,
+      "price": 65
+    },
+    {
+      "id": 913,
+      "name": "Cat eye gel",
+      "duration": 60,
+      "price": 60
+    },
+    {
+      "id": 914,
+      "name": "Stamping art",
+      "duration": 45,
+      "price": 45
+    },
+    {
+      "id": 915,
+      "name": "Soin cuticules intensif",
+      "duration": 30,
+      "price": 25
+    },
+    {
+      "id": 916,
+      "name": "Massage mains aromatique",
+      "duration": 20,
+      "price": 20
+    },
+    {
+      "id": 917,
+      "name": "Bain de paraffine mains",
+      "duration": 20,
+      "price": 18
+    },
+    {
+      "id": 918,
+      "name": "Exfoliation mains bio",
+      "duration": 25,
+      "price": 22
+    },
+    {
+      "id": 919,
+      "name": "Blanchiment ongles naturel",
+      "duration": 20,
+      "price": 20
+    },
+    {
+      "id": 920,
+      "name": "Pose strass/perles (5 pcs)",
+      "duration": 15,
+      "price": 10
+    },
+    {
+      "id": 921,
+      "name": "Pose stickers artistiques",
+      "duration": 20,
+      "price": 15
+    },
+    {
+      "id": 922,
+      "name": "Gradient multicolore",
+      "duration": 60,
+      "price": 55
+    },
+    {
+      "id": 923,
+      "name": "Effet marbré",
+      "duration": 60,
+      "price": 50
+    },
+    {
+      "id": 924,
+      "name": "French colorée",
+      "duration": 50,
+      "price": 45
+    },
+    {
+      "id": 925,
+      "name": "Tie & dye ongles",
+      "duration": 60,
+      "price": 55
+    },
+    {
+      "id": 926,
+      "name": "Effet dentelle",
+      "duration": 75,
+      "price": 70
+    },
+    {
+      "id": 927,
+      "name": "Pose feuilles d'or",
+      "duration": 30,
+      "price": 35
+    },
+    {
+      "id": 928,
+      "name": "Encapsulation fleurs séchées",
+      "duration": 90,
+      "price": 85
+    },
+    {
+      "id": 929,
+      "name": "Vernis thermique",
+      "duration": 45,
+      "price": 50
+    },
+    {
+      "id": 930,
+      "name": "Gel UV longue durée",
+      "duration": 60,
+      "price": 60
+    },
+    {
+      "id": 931,
+      "name": "Soin fortifiant ail/citron",
+      "duration": 30,
+      "price": 25
+    },
+    {
+      "id": 932,
+      "name": "Traitement anti-jaunissement",
+      "duration": 25,
+      "price": 22
+    },
+    {
+      "id": 933,
+      "name": "Sérum croissance ongles",
+      "duration": 20,
+      "price": 28
+    },
+    {
+      "id": 934,
+      "name": "Huile cuticules premium",
+      "duration": 15,
+      "price": 15
+    },
+    {
+      "id": 935,
+      "name": "Kit entretien à domicile",
+      "duration": 10,
+      "price": 35
+    },
+    {
+      "id": 936,
+      "name": "Formation pose vernis",
+      "duration": 120,
+      "price": 150
+    },
+    {
+      "id": 937,
+      "name": "Atelier nail art débutant",
+      "duration": 90,
+      "price": 85
+    },
+    {
+      "id": 938,
+      "name": "Consultation problèmes ongles",
+      "duration": 30,
+      "price": 30
+    },
+    {
+      "id": 939,
+      "name": "Programme soin 4 semaines",
+      "duration": 60,
+      "price": 200
+    },
+    {
+      "id": 940,
+      "name": "Carte cadeau personnalisée",
+      "duration": 5,
+      "price": 50
+    }
+  ],
+  "mainCategory": "onglerie"
+}

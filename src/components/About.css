@@ -1,7 +1,6 @@
 /* About Section */
 .about {
     background-color: var(--color-background);
-    /* Fond légèrement crème pour contraster avec les cartes blanches */
     padding: 100px 0;
     position: relative;
 }
@@ -10,6 +9,11 @@
     margin-bottom: 60px;
     position: relative;
     z-index: 2;
+}
+
+.about-header h2 {
+    color: #650c05;
+    /* Requested color */
 }
 
 .about-content {
@@ -23,7 +27,8 @@
 .about-description {
     font-size: 1.15rem;
     line-height: 1.9;
-    color: var(--color-text-light);
+    color: #000000;
+    /* Requested black color */
     margin-bottom: var(--spacing-md);
     text-align: center;
     font-weight: 300;

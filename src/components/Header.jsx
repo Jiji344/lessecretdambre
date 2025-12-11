@@ -84,6 +84,9 @@ const Header = () => {
               <button onClick={() => handleNavClick('services')} className="nav-link">
                 Services
               </button>
+              <button onClick={() => handleNavClick('gallery')} className="nav-link">
+                Galerie
+              </button>
               <button onClick={() => handleNavClick('reviews')} className="nav-link">
                 Avis
               </button>
@@ -122,6 +125,9 @@ const Header = () => {
           </button>
           <button onClick={() => handleNavClick('services')} className="nav-link-mobile">
             Services
+          </button>
+          <button onClick={() => handleNavClick('gallery')} className="nav-link-mobile">
+            Galerie
           </button>
           <button onClick={() => handleNavClick('reviews')} className="nav-link-mobile">
             Avis

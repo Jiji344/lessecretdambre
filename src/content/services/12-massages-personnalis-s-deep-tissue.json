@@ -1,0 +1,129 @@
+{
+  "id": 12,
+  "category": "Massages Personnalisés Deep Tissue",
+  "description": "Massages profonds sur intersections musculaires à fort pouvoir relaxant.",
+  "startingPrice": 59,
+  "services": [
+    {
+      "id": 1201,
+      "name": "Massage énergétique intuitif - 1 zone - 30 min",
+      "duration": 30,
+      "price": 68
+    },
+    {
+      "id": 1202,
+      "name": "Massage énergétique intuitif - 1h",
+      "duration": 60,
+      "price": 115
+    },
+    {
+      "id": 1203,
+      "name": "Massage énergétique intuitif - 1h30",
+      "duration": 90,
+      "price": 150
+    },
+    {
+      "id": 1204,
+      "name": "Massage énergétique intuitif - 2h",
+      "duration": 120,
+      "price": 200
+    },
+    {
+      "id": 1205,
+      "name": "Massage à 4 Mains Corps",
+      "duration": 60,
+      "price": 199
+    },
+    {
+      "id": 1206,
+      "name": "Massage à 4 Mains 1 Zone",
+      "duration": 30,
+      "price": 119
+    },
+    {
+      "id": 1207,
+      "name": "Mix Oriental intuitif corps entier",
+      "duration": 60,
+      "price": 115
+    },
+    {
+      "id": 1208,
+      "name": "Polynésien Lomi Lomi",
+      "duration": 60,
+      "price": 115
+    },
+    {
+      "id": 1209,
+      "name": "Indonésien aux bambous",
+      "duration": 60,
+      "price": 115
+    },
+    {
+      "id": 1210,
+      "name": "Shirodhara Ayurvédique avec sophrologie",
+      "duration": 60,
+      "price": 129
+    },
+    {
+      "id": 1211,
+      "name": "Symbolose corps entier et esprit",
+      "duration": 90,
+      "price": 159
+    },
+    {
+      "id": 1212,
+      "name": "Gestalt sensitif corps",
+      "duration": 60,
+      "price": 115
+    },
+    {
+      "id": 1213,
+      "name": "TUI NA drainant",
+      "duration": 60,
+      "price": 115
+    },
+    {
+      "id": 1214,
+      "name": "Emotional Massage",
+      "duration": 60,
+      "price": 115
+    },
+    {
+      "id": 1215,
+      "name": "Massage Sportif Deep Tissue",
+      "duration": 60,
+      "price": 115
+    },
+    {
+      "id": 1216,
+      "name": "Réflexologie plantaire",
+      "duration": 60,
+      "price": 109
+    },
+    {
+      "id": 1217,
+      "name": "Massage des pieds Ayurvédique Kansu",
+      "duration": 60,
+      "price": 109
+    },
+    {
+      "id": 1218,
+      "name": "Abhyanga Ayurvédique",
+      "duration": 60,
+      "price": 115
+    },
+    {
+      "id": 1219,
+      "name": "SHIATSU AMMA assis sur fauteuil",
+      "duration": 30,
+      "price": 59
+    },
+    {
+      "id": 1220,
+      "name": "Initiation au massage future maman",
+      "duration": 45,
+      "price": 59
+    }
+  ],
+  "mainCategory": "relaxation"
+}

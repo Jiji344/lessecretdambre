@@ -27,7 +27,7 @@ const About = () => {
         <section id="about" className="about section">
             <div className="container">
                 <div className="about-header text-center mb-4">
-                    <h2 className="text-primary" data-animate="scale">À Propos de Nous</h2>
+                    <h2 data-animate="scale">À Propos de Nous</h2>
                     <div className="underline"></div>
                 </div>
 

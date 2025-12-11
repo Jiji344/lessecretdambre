@@ -1,0 +1,22 @@
+{
+  "title": "Notre Galerie",
+  "subtitle": "Un aperçu de notre univers et de nos prestations",
+  "images": [
+    {
+      "image": "/asset/cms/salon1.jpg",
+      "alt": "description"
+    },
+    {
+      "image": "/asset/cms/salon2.jpg",
+      "alt": "description"
+    },
+    {
+      "image": "/asset/cms/salon3.jpg",
+      "alt": "description"
+    },
+    {
+      "image": "/asset/cms/salon4.jpg",
+      "alt": "description"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": 17,
+  "category": "Relaxations et Coaching",
+  "description": "Un accompagnement dans votre transformation pour oser l'Audace d'être soi même.",
+  "startingPrice": 75,
+  "services": [
+    {
+      "id": 1701,
+      "name": "Sophrologie ou Coaching : Séance individuelle",
+      "duration": 60,
+      "price": 75
+    },
+    {
+      "id": 1702,
+      "name": "Passeport 5 séances",
+      "duration": 60,
+      "price": 320
+    },
+    {
+      "id": 1703,
+      "name": "Passeport 10 séances + 1 Offerte",
+      "duration": 60,
+      "price": 550
+    }
+  ],
+  "mainCategory": "relaxation"
+}

@@ -1,0 +1,63 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "public/asset/cms"
+public_folder: "/asset/cms"
+
+collections:
+  - name: "services"
+    label: "Services"
+    folder: "src/content/services"
+    create: false
+    delete: false
+    extension: "json"
+    format: "json"
+    editor:
+      preview: false
+    fields:
+      - { label: "ID (Ne pas toucher)", name: "id", widget: "number", hint: "Identifiant unique utilisé par le site" }
+      - { label: "Main Category (Ne pas toucher)", name: "mainCategory", widget: "hidden", required: false }
+      - { label: "Catégorie (Nom du fichier)", name: "category", widget: "string", hint: "Titre de la section" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Note Spéciale", name: "note", widget: "text", required: false }
+      - { label: "Prix 'À partir de'", name: "startingPrice", widget: "number" }
+      - label: "Liste des Services"
+        name: "services"
+        widget: "list"
+        fields:
+          - { label: "Nom du service", name: "name", widget: "string" }
+          - { label: "Durée (min)", name: "duration", widget: "number" }
+          - { label: "Prix (€)", name: "price", widget: "number" }
+          - { label: "ID Service (Optionnel)", name: "id", widget: "number", required: false, hint: "Laisser vide pour auto-générer" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "gallery"
+        label: "Galerie Photos"
+        file: "src/content/gallery/data.json"
+        fields:
+          - { label: "Titre de la section", name: "title", widget: "string", default: "Notre Galerie" }
+          - { label: "Sous-titre", name: "subtitle", widget: "string", required: false, default: "Quelques réalisations et moments de détente" }
+          - label: "Photos"
+            name: "images"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Description (Alt text)", name: "alt", widget: "string", required: false }
+            
+      - name: "promotions"
+        label: "Promotions / Offres"
+        file: "src/content/promotions/data.json"
+        fields:
+          - { label: "Titre de la section", name: "title", widget: "string", default: "Nos Offres du Moment" }
+          - { label: "Afficher la section ?", name: "display", widget: "boolean", default: true }
+          - label: "Images (Flyers/Promos)"
+            name: "images"
+            widget: "list"
+            fields:
+              - { label: "Image (Flyer)", name: "image", widget: "image" }
+              - { label: "Description", name: "alt", widget: "string", required: false }

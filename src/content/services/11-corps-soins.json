@@ -1,0 +1,81 @@
+{
+  "id": 11,
+  "category": "Corps : Soins",
+  "description": "Soins du corps sans hammam. Seule la rubrique 'Autour du Hammam' comprend la séance H.",
+  "startingPrice": 49,
+  "services": [
+    {
+      "id": 1101,
+      "name": "Gommages au choix",
+      "duration": 30,
+      "price": 49
+    },
+    {
+      "id": 1102,
+      "name": "Enveloppements au choix",
+      "duration": 30,
+      "price": 49
+    },
+    {
+      "id": 1103,
+      "name": "Gommage + enveloppement",
+      "duration": 60,
+      "price": 88
+    },
+    {
+      "id": 1104,
+      "name": "Gommage + enveloppement + massage corps",
+      "duration": 90,
+      "price": 149
+    },
+    {
+      "id": 1105,
+      "name": "Gommage + enveloppement + Soin Visage",
+      "duration": 120,
+      "price": 199
+    },
+    {
+      "id": 1106,
+      "name": "Bronzage Naturel au cacao et henné",
+      "duration": 45,
+      "price": 59
+    },
+    {
+      "id": 1107,
+      "name": "Tatouage au henné",
+      "duration": 60,
+      "price": 35
+    },
+    {
+      "id": 1108,
+      "name": "Tatouage Blanc à la poudre de diamant",
+      "duration": 30,
+      "price": 35
+    },
+    {
+      "id": 1109,
+      "name": "Gommage express Pré épilation",
+      "duration": 15,
+      "price": 19
+    },
+    {
+      "id": 1110,
+      "name": "Drainage lymphatique de Vodder",
+      "duration": 30,
+      "price": 39
+    },
+    {
+      "id": 1111,
+      "name": "Dos à Problèmes: Pureté + douceur",
+      "duration": 60,
+      "price": 89
+    },
+    {
+      "id": 1112,
+      "name": "Cure de 5 séances Dos à Problèmes",
+      "duration": 60,
+      "price": 349
+    }
+  ],
+  "mainCategory": "corps"
+}

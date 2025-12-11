@@ -1,0 +1,94 @@
+{
+  "id": 7,
+  "category": "Épilation Hommes au Miel",
+  "description": "Peaux Sensibles ou Problèmes circulatoires (soin 100% Naturelle et efficace). Hydratation intense à l'huile Vita Argan.",
+  "note": "ATTENTION : Ne pas hydrater le jour de l'épilation sinon douche au savon noir sera nécessaire (+10€)",
+  "startingPrice": 15,
+  "services": [
+    {
+      "id": 701,
+      "name": "Soin épilatore 1/2 Bras au miel",
+      "duration": 30,
+      "price": 35
+    },
+    {
+      "id": 702,
+      "name": "Soin épilatore 1/2 Jambes au miel (mollets)",
+      "duration": 50,
+      "price": 69
+    },
+    {
+      "id": 703,
+      "name": "Soin épilatore Aisselles au miel",
+      "duration": 30,
+      "price": 25
+    },
+    {
+      "id": 704,
+      "name": "Soin épilatore Barbe au miel",
+      "duration": 60,
+      "price": 69
+    },
+    {
+      "id": 705,
+      "name": "Soin épilatore Bras au miel",
+      "duration": 45,
+      "price": 52
+    },
+    {
+      "id": 706,
+      "name": "Soin épilatore Cuisses au miel",
+      "duration": 60,
+      "price": 79
+    },
+    {
+      "id": 707,
+      "name": "Soin épilatore Dos ou torse au miel",
+      "duration": 75,
+      "price": 69
+    },
+    {
+      "id": 708,
+      "name": "Soin épilatore Épaules au miel",
+      "duration": 30,
+      "price": 20
+    },
+    {
+      "id": 709,
+      "name": "Soin épilatore Fesses au miel",
+      "duration": 30,
+      "price": 45
+    },
+    {
+      "id": 710,
+      "name": "Soin épilatore Jambes Entières au miel",
+      "duration": 75,
+      "price": 135
+    },
+    {
+      "id": 711,
+      "name": "Soin épilatore Maillot Intégral + SIFI au miel",
+      "duration": 60,
+      "price": 75
+    },
+    {
+      "id": 712,
+      "name": "Soin épilatore Nez ou Oreilles au miel",
+      "duration": 20,
+      "price": 15
+    },
+    {
+      "id": 713,
+      "name": "Soin épilatore Nuque au miel",
+      "duration": 30,
+      "price": 15
+    },
+    {
+      "id": 714,
+      "name": "Sourcils (ligne et restructuration) au miel",
+      "duration": 30,
+      "price": 30
+    }
+  ],
+  "mainCategory": "epilation"
+}

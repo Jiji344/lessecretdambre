@@ -1,0 +1,57 @@
+{
+  "id": 19,
+  "category": "Forfaits Épilation (Miel) 10 séances",
+  "description": "Forfaits de 10 séances d'épilation au miel.",
+  "startingPrice": 42,
+  "services": [
+    {
+      "id": 1901,
+      "name": "1/2 Jambes + Maillot simple + Aisselles",
+      "duration": 90,
+      "price": 600
+    },
+    {
+      "id": 1902,
+      "name": "1/2 Jambes + Maillot Brésilien + Aisselles",
+      "duration": 120,
+      "price": 690
+    },
+    {
+      "id": 1903,
+      "name": "1/2 Jambes + Maillot américain + aisselles",
+      "duration": 120,
+      "price": 750
+    },
+    {
+      "id": 1904,
+      "name": "1/2 Jambes + Maillot intégral + aisselles",
+      "duration": 135,
+      "price": 800
+    },
+    {
+      "id": 1905,
+      "name": "Jambes entières + Maillot simple + Aisselles",
+      "duration": 120,
+      "price": 850
+    },
+    {
+      "id": 1906,
+      "name": "Jambes Entières + Maillot Brésilien + Aisselles",
+      "duration": 150,
+      "price": 900
+    },
+    {
+      "id": 1907,
+      "name": "Jambes entières + Maillot américain + aisselles",
+      "duration": 150,
+      "price": 1000
+    },
+    {
+      "id": 1908,
+      "name": "Jambes Entières + Maillot Intégral + Aisselles",
+      "duration": 180,
+      "price": 1050
+    }
+  ],
+  "mainCategory": "epilation"
+}

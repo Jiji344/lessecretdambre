@@ -1,0 +1,81 @@
+{
+  "id": 6,
+  "category": "Épilation Hommes Fleur de Coton",
+  "description": "Ne pas hydrater le jour de l'épilation en cas contraire une douche au savon noir sera nécessaire (+10€)",
+  "startingPrice": 12,
+  "services": [
+    {
+      "id": 601,
+      "name": "Aisselles",
+      "duration": 25,
+      "price": 24
+    },
+    {
+      "id": 602,
+      "name": "Barbe",
+      "duration": 25,
+      "price": 49
+    },
+    {
+      "id": 603,
+      "name": "Bras",
+      "duration": 30,
+      "price": 42
+    },
+    {
+      "id": 604,
+      "name": "1/2 Bras",
+      "duration": 20,
+      "price": 27
+    },
+    {
+      "id": 605,
+      "name": "Cuisses",
+      "duration": 40,
+      "price": 55
+    },
+    {
+      "id": 606,
+      "name": "Épaules",
+      "duration": 15,
+      "price": 16
+    },
+    {
+      "id": 607,
+      "name": "Dos ou Torse",
+      "duration": 45,
+      "price": 55
+    },
+    {
+      "id": 608,
+      "name": "Fesses",
+      "duration": 15,
+      "price": 42
+    },
+    {
+      "id": 609,
+      "name": "1/2 Jambes",
+      "duration": 30,
+      "price": 48
+    },
+    {
+      "id": 610,
+      "name": "Jambes Entières",
+      "duration": 40,
+      "price": 96
+    },
+    {
+      "id": 611,
+      "name": "Nez ou oreilles",
+      "duration": 20,
+      "price": 14
+    },
+    {
+      "id": 612,
+      "name": "Nuque",
+      "duration": 20,
+      "price": 12
+    }
+  ],
+  "mainCategory": "epilation"
+}

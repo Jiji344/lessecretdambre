@@ -1,0 +1,99 @@
+{
+  "id": 5,
+  "category": "Épilation Hommes à la Cire",
+  "description": "Ne pas hydrater le jour de l'épilation en cas contraire une douche au savon noir sera nécessaire (+10€)",
+  "startingPrice": 10,
+  "services": [
+    {
+      "id": 501,
+      "name": "1/2 Bras à la cire",
+      "duration": 30,
+      "price": 19
+    },
+    {
+      "id": 502,
+      "name": "1/2 jambes (mollets) à la cire",
+      "duration": 40,
+      "price": 45
+    },
+    {
+      "id": 503,
+      "name": "Aisselles à la cire",
+      "duration": 30,
+      "price": 22
+    },
+    {
+      "id": 504,
+      "name": "Barbe à la cire",
+      "duration": 45,
+      "price": 39
+    },
+    {
+      "id": 505,
+      "name": "Bras à la cire",
+      "duration": 45,
+      "price": 35
+    },
+    {
+      "id": 506,
+      "name": "Cuisses à la cire",
+      "duration": 40,
+      "price": 48
+    },
+    {
+      "id": 507,
+      "name": "Dos ou torse à la cire",
+      "duration": 30,
+      "price": 49
+    },
+    {
+      "id": 508,
+      "name": "Épaules à la cire",
+      "duration": 20,
+      "price": 14
+    },
+    {
+      "id": 509,
+      "name": "Fesses à la cire",
+      "duration": 30,
+      "price": 29
+    },
+    {
+      "id": 510,
+      "name": "Jambes Entières à la cire",
+      "duration": 60,
+      "price": 89
+    },
+    {
+      "id": 511,
+      "name": "Nez ou Oreilles à la cire",
+      "duration": 30,
+      "price": 12
+    },
+    {
+      "id": 512,
+      "name": "Nuque à la cire",
+      "duration": 30,
+      "price": 10
+    },
+    {
+      "id": 513,
+      "name": "Sourcils (ligne et restructuration) à la cire",
+      "duration": 30,
+      "price": 30
+    },
+    {
+      "id": 514,
+      "name": "Gommage express Pré épilation",
+      "duration": 15,
+      "price": 19
+    },
+    {
+      "id": 515,
+      "name": "Maillot Intégral + SIFI à la cire",
+      "duration": 45,
+      "price": 55
+    }
+  ],
+  "mainCategory": "epilation"
+}

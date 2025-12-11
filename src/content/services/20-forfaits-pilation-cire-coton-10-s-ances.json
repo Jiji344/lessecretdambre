@@ -1,0 +1,105 @@
+{
+  "id": 20,
+  "category": "Forfaits Épilation (Cire & Coton) 10 séances",
+  "description": "Forfaits de 10 séances d'épilation à la cire et fleur de coton.",
+  "startingPrice": 35,
+  "services": [
+    {
+      "id": 2001,
+      "name": "CIRE - 1/2 Jambes + Maillot simple + aisselles",
+      "duration": 90,
+      "price": 460
+    },
+    {
+      "id": 2002,
+      "name": "CIRE - 1/2 Jambes + Maillot brésilien + aisselles",
+      "duration": 120,
+      "price": 500
+    },
+    {
+      "id": 2003,
+      "name": "CIRE - 1/2 Jambes + Maillot Américain + Aisselles",
+      "duration": 120,
+      "price": 580
+    },
+    {
+      "id": 2004,
+      "name": "CIRE - 1/2 Jambes + Maillot intégral + aisselles",
+      "duration": 135,
+      "price": 690
+    },
+    {
+      "id": 2005,
+      "name": "CIRE - Jambes entières + Maillot simple + Aisselles",
+      "duration": 120,
+      "price": 670
+    },
+    {
+      "id": 2006,
+      "name": "CIRE - Jambes entières + Maillot brésilien + aisselles",
+      "duration": 150,
+      "price": 730
+    },
+    {
+      "id": 2007,
+      "name": "CIRE - Jambes entières + Maillot américain + aisselles",
+      "duration": 150,
+      "price": 780
+    },
+    {
+      "id": 2008,
+      "name": "CIRE - Jambes Entières + Maillot Intégral + Aisselles",
+      "duration": 180,
+      "price": 880
+    },
+    {
+      "id": 2009,
+      "name": "COTON - 1/2 Jambes + Maillot simple + aisselles",
+      "duration": 90,
+      "price": 530
+    },
+    {
+      "id": 2010,
+      "name": "COTON - 1/2 Jambes + Maillot brésilien + aisselles",
+      "duration": 120,
+      "price": 600
+    },
+    {
+      "id": 2011,
+      "name": "COTON - 1/2 Jambes + Maillot américain + aisselles",
+      "duration": 120,
+      "price": 700
+    },
+    {
+      "id": 2012,
+      "name": "COTON - 1/2 Jambes + Maillot intégral + aisselles",
+      "duration": 135,
+      "price": 730
+    },
+    {
+      "id": 2013,
+      "name": "COTON - Jambes entières + Maillot simple + Aisselles",
+      "duration": 120,
+      "price": 750
+    },
+    {
+      "id": 2014,
+      "name": "COTON - Jambes entières + Maillot brésilien + aisselles",
+      "duration": 150,
+      "price": 790
+    },
+    {
+      "id": 2015,
+      "name": "COTON - Jambes entières + Maillot américain + aisselles",
+      "duration": 150,
+      "price": 870
+    },
+    {
+      "id": 2016,
+      "name": "COTON - Jambes Entières + Maillot Intégral + Aisselles",
+      "duration": 180,
+      "price": 930
+    }
+  ],
+  "mainCategory": "epilation"
+}

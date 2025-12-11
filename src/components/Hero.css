@@ -5,12 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: image-set(
-        url('/asset/hero/Hero/hero.webp') type('image/webp'),
-        url('/asset/hero/Hero/hero.jpg') type('image/jpeg')
-    ) center center / cover no-repeat;
+    background: url('/asset/hero/Hero.webp') center center / cover no-repeat;
     overflow: hidden;
-    margin-bottom: 200px;
 }
 
 
@@ -124,7 +120,7 @@
         align-items: flex-start;
         /* Aligner le contenu vers le haut */
         /* Ajustement pour voir les gouttes à droite */
-        background: url('/asset/hero/Hero/Hero-mobile.webp') center center / cover no-repeat;
+        background: url('/asset/hero/Hero-mobile.webp') center center / cover no-repeat;
     }
 
     .hero-content {

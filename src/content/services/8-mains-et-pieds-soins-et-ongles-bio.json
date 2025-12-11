@@ -1,0 +1,249 @@
+{
+  "id": 8,
+  "category": "Mains et Pieds - Soins et Ongles Bio",
+  "description": "Soins complets des mains et pieds avec produits bio de qualité.",
+  "startingPrice": 5,
+  "services": [
+    {
+      "id": 801,
+      "name": "Mains + Manucure avec soin ongles abîmés",
+      "duration": 60,
+      "price": 50
+    },
+    {
+      "id": 802,
+      "name": "Mains + Manucure ORCI",
+      "duration": 40,
+      "price": 39
+    },
+    {
+      "id": 803,
+      "name": "Manucure Russe - sans vernis",
+      "duration": 30,
+      "price": 35
+    },
+    {
+      "id": 804,
+      "name": "Manucure Russe + Renforcement Gel",
+      "duration": 90,
+      "price": 65
+    },
+    {
+      "id": 805,
+      "name": "ONGLERIE : Déco en plus par ongle",
+      "duration": 10,
+      "price": 5
+    },
+    {
+      "id": 806,
+      "name": "ONGLERIE : Nail Art par ongle",
+      "duration": 10,
+      "price": 8
+    },
+    {
+      "id": 807,
+      "name": "ONGLERIE : Vernis Semi Permanent + Renforcement Gel",
+      "duration": 70,
+      "price": 55
+    },
+    {
+      "id": 808,
+      "name": "Onglerie + DEPOSE FAUX ONGLES",
+      "duration": 50,
+      "price": 29
+    },
+    {
+      "id": 809,
+      "name": "Onglerie + DEPOSE VERNIS SEMI PERMANENT",
+      "duration": 30,
+      "price": 20
+    },
+    {
+      "id": 810,
+      "name": "Onglerie + FAUX ONGLES - COMBLAGE après 3 semaines",
+      "duration": 50,
+      "price": 55
+    },
+    {
+      "id": 811,
+      "name": "Onglerie + FAUX ONGLES POSE / Extension en gel",
+      "duration": 120,
+      "price": 70
+    },
+    {
+      "id": 812,
+      "name": "Onglerie + Vernis sans permanent POSE",
+      "duration": 60,
+      "price": 59
+    },
+    {
+      "id": 813,
+      "name": "Onglerie + Vernis semi permanent POSE",
+      "duration": 45,
+      "price": 35
+    },
+    {
+      "id": 814,
+      "name": "Onglerie + Vernis traditionnel POSE",
+      "duration": 30,
+      "price": 15
+    },
+    {
+      "id": 815,
+      "name": "Onglerie BIO + FAUX ONGLES BIO",
+      "duration": 120,
+      "price": 125
+    },
+    {
+      "id": 816,
+      "name": "Onglerie BIO + MANUCURE + GAINAGE",
+      "duration": 90,
+      "price": 89
+    },
+    {
+      "id": 817,
+      "name": "Onglerie BIO + Vernis semi permanent POSE avec manucure",
+      "duration": 60,
+      "price": 65
+    },
+    {
+      "id": 818,
+      "name": "Onglerie BIO + Vernis semi permanent POSE sans manucure",
+      "duration": 45,
+      "price": 49
+    },
+    {
+      "id": 819,
+      "name": "ONGLERIE BIO BEST OF : POSE + MANUCURE + GOMMAGE + MASQUE + MASSAGE",
+      "duration": 90,
+      "price": 109
+    },
+    {
+      "id": 820,
+      "name": "Pieds + Beauté des pieds d'ailleurs",
+      "duration": 90,
+      "price": 89
+    },
+    {
+      "id": 821,
+      "name": "Pieds + Beauté des pieds d'ici",
+      "duration": 60,
+      "price": 59
+    },
+    {
+      "id": 822,
+      "name": "Pieds + Soin des pieds abîmés DEESSE DU DESERT",
+      "duration": 90,
+      "price": 110
+    },
+    {
+      "id": 823,
+      "name": "Pieds + Soin des Talons peu abîmés",
+      "duration": 30,
+      "price": 25
+    },
+    {
+      "id": 824,
+      "name": "Pédicure médicale",
+      "duration": 60,
+      "price": 65
+    },
+    {
+      "id": 825,
+      "name": "Soin complet pieds + Vernis semi permanent",
+      "duration": 120,
+      "price": 95
+    },
+    {
+      "id": 826,
+      "name": "Vernis semi permanent pieds uniquement",
+      "duration": 45,
+      "price": 40
+    },
+    {
+      "id": 827,
+      "name": "French pieds semi permanent",
+      "duration": 60,
+      "price": 55
+    },
+    {
+      "id": 828,
+      "name": "Dépose vernis semi permanent pieds",
+      "duration": 20,
+      "price": 15
+    },
+    {
+      "id": 829,
+      "name": "Gainage ongles pieds",
+      "duration": 45,
+      "price": 45
+    },
+    {
+      "id": 830,
+      "name": "Soin express pieds",
+      "duration": 45,
+      "price": 45
+    },
+    {
+      "id": 831,
+      "name": "Gommage + Massage pieds",
+      "duration": 30,
+      "price": 35
+    },
+    {
+      "id": 832,
+      "name": "Pose capsules pieds",
+      "duration": 90,
+      "price": 85
+    },
+    {
+      "id": 833,
+      "name": "Comblage capsules pieds",
+      "duration": 60,
+      "price": 65
+    },
+    {
+      "id": 834,
+      "name": "Extension gel pieds",
+      "duration": 90,
+      "price": 95
+    },
+    {
+      "id": 835,
+      "name": "Reconstruction ongle pied",
+      "duration": 30,
+      "price": 25
+    },
+    {
+      "id": 836,
+      "name": "Soin ongles incarnés",
+      "duration": 45,
+      "price": 55
+    },
+    {
+      "id": 837,
+      "name": "Traitement mycoses ongles",
+      "duration": 30,
+      "price": 40
+    },
+    {
+      "id": 838,
+      "name": "Ponçage callosités",
+      "duration": 30,
+      "price": 30
+    },
+    {
+      "id": 839,
+      "name": "Bain de paraffine pieds",
+      "duration": 20,
+      "price": 20
+    },
+    {
+      "id": 840,
+      "name": "Masque hydratant pieds",
+      "duration": 20,
+      "price": 18
+    }
+  ],
+  "mainCategory": "onglerie"
+}

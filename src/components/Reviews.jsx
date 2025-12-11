@@ -152,7 +152,7 @@ const Reviews = () => {
         <section id="reviews" className="reviews section">
             <div className="container">
                 <div className="reviews-header text-center mb-4">
-                    <h2 className="text-primary" data-animate="scale">Vos Avis</h2>
+                    <h2 data-animate="scale">Vos Avis</h2>
                     <div className="underline"></div>
                     <p className="reviews-subtitle">
                         Découvrez ce que nos clientes pensent de nos services

@@ -1,0 +1,111 @@
+{
+  "id": 14,
+  "category": "Soins Visage",
+  "description": "Soins visage complets avec options anti-âge, purifiants, hydratants et relaxants.",
+  "startingPrice": 9,
+  "services": [
+    {
+      "id": 1401,
+      "name": "Black Pearl : Soin liftant peaux noires et métissées",
+      "duration": 30,
+      "price": 125
+    },
+    {
+      "id": 1402,
+      "name": "Forfait 10 séances : Soin Anti-Age Liftant",
+      "duration": 60,
+      "price": 350
+    },
+    {
+      "id": 1403,
+      "name": "Forfait 5 séances : Soin Anti-Age Liftant",
+      "duration": 60,
+      "price": 250
+    },
+    {
+      "id": 1404,
+      "name": "Jeunesse Intense Booster",
+      "duration": 90,
+      "price": 149
+    },
+    {
+      "id": 1405,
+      "name": "Kobido (japonais) avec Mukabhyanga (Ayurvédique)",
+      "duration": 50,
+      "price": 79
+    },
+    {
+      "id": 1406,
+      "name": "Kobido + Soin Liftant aux ventouses",
+      "duration": 90,
+      "price": 120
+    },
+    {
+      "id": 1407,
+      "name": "KOBIDO PROMO PRINTEMPS + Luminothérapie",
+      "duration": 90,
+      "price": 89
+    },
+    {
+      "id": 1408,
+      "name": "Passport pour une Jeunesse Intense - 5 soins",
+      "duration": 30,
+      "price": 400
+    },
+    {
+      "id": 1409,
+      "name": "Peeling bio + Soin Purifiant et hydratant",
+      "duration": 90,
+      "price": 89
+    },
+    {
+      "id": 1410,
+      "name": "Peeling Bio au miel : Coup d'éclat 100% naturel",
+      "duration": 40,
+      "price": 69
+    },
+    {
+      "id": 1411,
+      "name": "Soin anti-âge Extrême de Luxe",
+      "duration": 90,
+      "price": 229
+    },
+    {
+      "id": 1412,
+      "name": "Soin anti-âge Liftant mécanique Ventouses",
+      "duration": 60,
+      "price": 70
+    },
+    {
+      "id": 1413,
+      "name": "Soin anti-âge Prestige de la Mer Morte",
+      "duration": 90,
+      "price": 135
+    },
+    {
+      "id": 1414,
+      "name": "Soin tenseur raffermissant de la Mer Morte",
+      "duration": 90,
+      "price": 99
+    },
+    {
+      "id": 1415,
+      "name": "Soin visage anti-âge Coréen",
+      "duration": 120,
+      "price": 115
+    },
+    {
+      "id": 1416,
+      "name": "Soins ethniques spécifiques",
+      "duration": 60,
+      "price": 59
+    },
+    {
+      "id": 1417,
+      "name": "Soin express éclat 30 min",
+      "duration": 30,
+      "price": 45
+    }
+  ],
+  "mainCategory": "visage"
+}

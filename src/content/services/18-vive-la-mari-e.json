@@ -1,0 +1,45 @@
+{
+  "id": 18,
+  "category": "Vive la Mariée",
+  "description": "Forfaits spéciaux pour les mariées.",
+  "startingPrice": 98,
+  "services": [
+    {
+      "id": 1801,
+      "name": "Maquillage mariée avec essai inclus",
+      "duration": 60,
+      "price": 98
+    },
+    {
+      "id": 1802,
+      "name": "Beauté de la mariée",
+      "duration": 180,
+      "price": 289
+    },
+    {
+      "id": 1803,
+      "name": "Les Secrets de la mariée",
+      "duration": 210,
+      "price": 359
+    },
+    {
+      "id": 1804,
+      "name": "Lune de Miel",
+      "duration": 360,
+      "price": 489
+    },
+    {
+      "id": 1805,
+      "name": "Mise en beauté des accompagnatrices",
+      "duration": 120,
+      "price": 149
+    },
+    {
+      "id": 1806,
+      "name": "Forfait témoin",
+      "duration": 90,
+      "price": 125
+    }
+  ],
+  "mainCategory": "visage"
+}

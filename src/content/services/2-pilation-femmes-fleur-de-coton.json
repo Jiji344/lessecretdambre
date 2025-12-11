@@ -1,0 +1,100 @@
+{
+  "id": 2,
+  "category": "Épilation Femmes Fleur de Coton",
+  "description": "Poils complexes, courts, rasés cassés - Ou - À la cire Boudoir = Peaux réactives, fragiles, fines. Hydratation intense au liniment parfumé selon votre choix.",
+  "note": "Ne pas hydrater le jour de l'épilation en cas contraire une douche au savon noir sera nécessaire (+10€)",
+  "startingPrice": 12,
+  "services": [
+    {
+      "id": 201,
+      "name": "Aisselles Fleur de coton ou Boudoir",
+      "duration": 20,
+      "price": 16
+    },
+    {
+      "id": 202,
+      "name": "Bras Fleur de coton ou Boudoir (sans bandes +10€)",
+      "duration": 30,
+      "price": 32
+    },
+    {
+      "id": 203,
+      "name": "1/2 Bras Fleur de coton ou Boudoir",
+      "duration": 20,
+      "price": 23
+    },
+    {
+      "id": 204,
+      "name": "Cuisses Fleur de coton ou Boudoir (sans bandes +10€)",
+      "duration": 35,
+      "price": 35
+    },
+    {
+      "id": 205,
+      "name": "Fesses ou Ventre Fleur de coton ou Boudoir",
+      "duration": 20,
+      "price": 22
+    },
+    {
+      "id": 206,
+      "name": "1/2 Jambes Fleur de coton ou Boudoir (sans bandes +10€)",
+      "duration": 30,
+      "price": 35
+    },
+    {
+      "id": 207,
+      "name": "Jambes Entières Fleur de coton ou Boudoir (sans bandes +15€)",
+      "duration": 50,
+      "price": 65
+    },
+    {
+      "id": 208,
+      "name": "Lèvres ou menton Fleur de coton ou Boudoir",
+      "duration": 15,
+      "price": 12
+    },
+    {
+      "id": 209,
+      "name": "Maillot Simple Fleur de coton ou Boudoir",
+      "duration": 20,
+      "price": 20
+    },
+    {
+      "id": 210,
+      "name": "Maillot Échancré (sans les lèvres ni le SIF) Fleur de coton ou Boudoir",
+      "duration": 25,
+      "price": 32
+    },
+    {
+      "id": 211,
+      "name": "Maillot Américain (avec SIF sans les lèvres) Fleur de coton ou Boudoir",
+      "duration": 40,
+      "price": 39
+    },
+    {
+      "id": 212,
+      "name": "Maillot Intégral (Lèvres + SIF avec ou sans ticket de métro) Fleur de coton ou Boudoir",
+      "duration": 45,
+      "price": 45
+    },
+    {
+      "id": 213,
+      "name": "Sourcils restructuration Fleur de coton ou Boudoir",
+      "duration": 35,
+      "price": 26
+    },
+    {
+      "id": 214,
+      "name": "VAJACIAL Soin Pubis Post Epilatoire réparateur et anti poils sous cutanés",
+      "duration": 90,
+      "price": 119
+    },
+    {
+      "id": 215,
+      "name": "Gommage express Pré épilation (à sec et électrique) pour les jambes très sèches ou pilosités complexes",
+      "duration": 15,
+      "price": 29
+    }
+  ],
+  "mainCategory": "epilation"
+}

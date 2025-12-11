@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import servicesData from '../data/servicesData';
+import servicesData, { categoryGroups } from '../data/servicesData';
 import ServiceModal from './ServiceModal';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 import {
@@ -28,6 +28,7 @@ import './Services.css';
 
 const Services = () => {
     const [selectedCategoryId, setSelectedCategoryId] = useState(null);
+    const [activeTab, setActiveTab] = useState('visage');
 
     // Trigger scroll animations when section enters viewport (small delay for cascade effect)
     useScrollAnimation({ threshold: 0.05, triggerOnce: true });
@@ -77,20 +78,39 @@ const Services = () => {
         icon: iconMap[selectedCategory.id]
     } : null;
 
+    // Filter services based on active tab
+    const activeGroup = categoryGroups.find(group => group.id === activeTab);
+    const filteredServices = servicesData.filter(service =>
+        activeGroup?.subCategories.includes(service.id)
+    );
+
     return (
         <>
             <section id="services" className="services section">
                 <div className="container">
                     <div className="services-header text-center mb-4">
-                        <h2 className="text-primary" data-animate="scale">Nos Services</h2>
+                        <h2 data-animate="scale">Nos Services</h2>
                         <div className="underline"></div>
                         <p className="services-subtitle">
                             Découvrez notre large gamme de soins et prestations pour votre bien-être
                         </p>
                     </div>
 
+                    {/* Navigation Tabs */}
+                    <div className="services-tabs" data-animate="fade-up">
+                        {categoryGroups.map((group) => (
+                            <button
+                                key={group.id}
+                                className={`tab-btn ${activeTab === group.id ? 'active' : ''}`}
+                                onClick={() => setActiveTab(group.id)}
+                            >
+                                {group.title}
+                            </button>
+                        ))}
+                    </div>
+
                     <div className="services-grid">
-                        {servicesData.map((category, index) => (
+                        {filteredServices.map((category, index) => (
                             <div
                                 key={category.id}
                                 className="service-card"
@@ -98,7 +118,6 @@ const Services = () => {
                                 data-animate-delay={Math.min(index + 1, 20)}
                             >
                                 <div className="service-icon-wrapper">
-                                    {/* Forcer la taille de l'icône via style inline si nécessaire, mais le CSS gère déjà */}
                                     {iconMap[category.id]}
                                 </div>
                                 <h3 className="service-title">{category.category}</h3>

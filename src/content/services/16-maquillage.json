@@ -1,0 +1,57 @@
+{
+  "id": 16,
+  "category": "Maquillage",
+  "description": "Maquillage professionnel pour tous les événements.",
+  "startingPrice": 29,
+  "services": [
+    {
+      "id": 1601,
+      "name": "Maquillage Flash",
+      "duration": 30,
+      "price": 29
+    },
+    {
+      "id": 1602,
+      "name": "Maquillage Jour",
+      "duration": 35,
+      "price": 49
+    },
+    {
+      "id": 1603,
+      "name": "Maquillage soir",
+      "duration": 90,
+      "price": 69
+    },
+    {
+      "id": 1604,
+      "name": "Maquillage Oriental",
+      "duration": 90,
+      "price": 79
+    },
+    {
+      "id": 1605,
+      "name": "Maquillage de scène",
+      "duration": 120,
+      "price": 99
+    },
+    {
+      "id": 1606,
+      "name": "Cours d'auto maquillage jour",
+      "duration": 30,
+      "price": 89
+    },
+    {
+      "id": 1607,
+      "name": "Cours d'auto maquillage jour et soir",
+      "duration": 90,
+      "price": 110
+    },
+    {
+      "id": 1608,
+      "name": "Programme Jeunes de 8 à 16 ans",
+      "duration": 60,
+      "price": 165
+    }
+  ],
+  "mainCategory": "visage"
+}

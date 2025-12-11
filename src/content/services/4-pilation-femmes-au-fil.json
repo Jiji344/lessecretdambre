@@ -1,0 +1,39 @@
+{
+  "id": 4,
+  "category": "Épilation Femmes au Fil",
+  "description": "Une épilation précise et hypo-allergénique réservée aux zones du visage.",
+  "startingPrice": 15,
+  "services": [
+    {
+      "id": 401,
+      "name": "Sourcils au Fil",
+      "duration": 30,
+      "price": 35
+    },
+    {
+      "id": 402,
+      "name": "Lèvres au Fil",
+      "duration": 30,
+      "price": 15
+    },
+    {
+      "id": 403,
+      "name": "Menton au Fil",
+      "duration": 30,
+      "price": 19
+    },
+    {
+      "id": 404,
+      "name": "Visage entier au Fil",
+      "duration": 55,
+      "price": 79
+    },
+    {
+      "id": 405,
+      "name": "Joues au fil",
+      "duration": 30,
+      "price": 39
+    }
+  ],
+  "mainCategory": "epilation"
+}

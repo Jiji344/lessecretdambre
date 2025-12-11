@@ -1,0 +1,100 @@
+{
+  "id": 1,
+  "category": "Épilation Femmes à la Cire Traditionnelle",
+  "description": "Épilation précise à la cire traditionnelle à l'aloe vera. Pilosité et peau normales.",
+  "note": "Ne pas hydrater le jour de l'épilation en cas contraire une douche au savon noir sera nécessaire (+10€)",
+  "startingPrice": 9,
+  "services": [
+    {
+      "id": 101,
+      "name": "1/2 Bras Cire",
+      "duration": 30,
+      "price": 18
+    },
+    {
+      "id": 102,
+      "name": "1/2 jambes cire (à bandes)",
+      "duration": 30,
+      "price": 28
+    },
+    {
+      "id": 103,
+      "name": "Aisselles à la cire",
+      "duration": 30,
+      "price": 14
+    },
+    {
+      "id": 104,
+      "name": "Bras à la cire",
+      "duration": 45,
+      "price": 25
+    },
+    {
+      "id": 105,
+      "name": "Cuisses à la cire",
+      "duration": 30,
+      "price": 28
+    },
+    {
+      "id": 106,
+      "name": "Fesses ou Ventre à la cire",
+      "duration": 30,
+      "price": 19
+    },
+    {
+      "id": 107,
+      "name": "Jambes Entières à la cire à bande",
+      "duration": 45,
+      "price": 49
+    },
+    {
+      "id": 108,
+      "name": "Lèvres ou Menton à la Cire",
+      "duration": 30,
+      "price": 9
+    },
+    {
+      "id": 109,
+      "name": "Maillot Américain Cire (échancré + SIF. Ne comprend pas les lèvres)",
+      "duration": 45,
+      "price": 32
+    },
+    {
+      "id": 110,
+      "name": "Maillot échancré brésilien à la Cire (Hors lèvres et SIF)",
+      "duration": 30,
+      "price": 28
+    },
+    {
+      "id": 111,
+      "name": "Maillot Intégral à la Cire (Lèvres+ SIF)",
+      "duration": 39,
+      "price": 39
+    },
+    {
+      "id": 112,
+      "name": "Maillot Simple (aine) à la Cire",
+      "duration": 30,
+      "price": 18
+    },
+    {
+      "id": 113,
+      "name": "Sourcils (entretien. Nettoyage des poils sous le sourcil sans dessin de la ligne) à la cire",
+      "duration": 30,
+      "price": 18
+    },
+    {
+      "id": 114,
+      "name": "Sourcils restructuration à la Cire",
+      "duration": 30,
+      "price": 25
+    },
+    {
+      "id": 115,
+      "name": "Gommage express Pré épilation (à sec et électrique) pour les jambes très sèches ou pilosités complexes",
+      "duration": 15,
+      "price": 29
+    }
+  ],
+  "mainCategory": "epilation"
+}

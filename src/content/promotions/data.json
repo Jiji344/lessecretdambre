@@ -1,0 +1,26 @@
+{
+  "title": "Profitez de nos offres du moment",
+  "display": true,
+  "images": [
+    {
+      "image": "/asset/cms/epilation.jpg",
+      "alt": "30%"
+    },
+    {
+      "image": "/asset/cms/hammam.jpg",
+      "alt": "30%"
+    },
+    {
+      "image": "/asset/cms/massage.jpg",
+      "alt": "30%"
+    },
+    {
+      "image": "/asset/cms/ongle.jpg",
+      "alt": "30%"
+    },
+    {
+      "image": "/asset/cms/massage.jpg",
+      "alt": "30%"
+    }
+  ]
+}

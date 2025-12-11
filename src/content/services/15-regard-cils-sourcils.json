@@ -1,0 +1,117 @@
+{
+  "id": 15,
+  "category": "Regard (Cils & Sourcils)",
+  "description": "Extensions de cils, restructuration et coloration des sourcils.",
+  "startingPrice": 9,
+  "services": [
+    {
+      "id": 1501,
+      "name": "Cils : Dépose Extension (posés +15j avant)",
+      "duration": 30,
+      "price": 19
+    },
+    {
+      "id": 1502,
+      "name": "Cils : Dépose Extension (posés -15j avant)",
+      "duration": 50,
+      "price": 40
+    },
+    {
+      "id": 1503,
+      "name": "Cils : Extension (Cil à cil / Volume Russe) Effet Naturel",
+      "duration": 90,
+      "price": 79
+    },
+    {
+      "id": 1504,
+      "name": "Cils : Extension Remplissage 3 semaines",
+      "duration": 30,
+      "price": 45
+    },
+    {
+      "id": 1505,
+      "name": "Cils : Faux cils d'une soirée",
+      "duration": 30,
+      "price": 25
+    },
+    {
+      "id": 1506,
+      "name": "Cils : Forfait Réhaussement + Teinture",
+      "duration": 90,
+      "price": 89
+    },
+    {
+      "id": 1507,
+      "name": "Cils : LASHFILLER + Réhaussement + soin",
+      "duration": 90,
+      "price": 89
+    },
+    {
+      "id": 1508,
+      "name": "Cils : LASHFILLER Forfait 3 séances + Teinture",
+      "duration": 90,
+      "price": 257
+    },
+    {
+      "id": 1509,
+      "name": "Cils : Mascara Semi-Permanent",
+      "duration": 30,
+      "price": 49
+    },
+    {
+      "id": 1510,
+      "name": "Cils : Teinture Cils Longue durée (6 semaines)",
+      "duration": 40,
+      "price": 49
+    },
+    {
+      "id": 1511,
+      "name": "Cils : Teinture cils traditionnelle",
+      "duration": 30,
+      "price": 33
+    },
+    {
+      "id": 1512,
+      "name": "Sourcils : Épilation et restructuration à la cire",
+      "duration": 30,
+      "price": 25
+    },
+    {
+      "id": 1513,
+      "name": "Sourcils : Épilation et restructuration au fil",
+      "duration": 40,
+      "price": 35
+    },
+    {
+      "id": 1514,
+      "name": "Sourcils : Épilation et restructuration au miel",
+      "duration": 30,
+      "price": 29
+    },
+    {
+      "id": 1515,
+      "name": "Sourcils : Épilation Fleur de Coton",
+      "duration": 30,
+      "price": 29
+    },
+    {
+      "id": 1516,
+      "name": "Sourcils : Restructuration + Teinture poils et peau",
+      "duration": 60,
+      "price": 59
+    },
+    {
+      "id": 1517,
+      "name": "Sourcils : Tatouage éphémère Jagua poil à poil",
+      "duration": 45,
+      "price": 55
+    },
+    {
+      "id": 1518,
+      "name": "Sourcils : Tatouage permanent Micro Blading + Soft Tape",
+      "duration": 90,
+      "price": 350
+    }
+  ],
+  "mainCategory": "visage"
+}

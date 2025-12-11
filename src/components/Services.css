@@ -3,12 +3,59 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    margin-top: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
     padding: 0 20px;
+    /* Min-height to avoid layout jump when switching tabs */
+    min-height: 400px;
 }
 
-.services {
-    border-top: 10px solid #621509;
+
+
+/* --- Header --- */
+.services-subtitle {
+    color: #ffffff;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+/* --- Navigation Tabs --- */
+.services-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.tab-btn {
+    background-color: transparent;
+    color: var(--color-text);
+    border: 1px solid rgba(26, 26, 26, 0.1);
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tab-btn:hover {
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+    transform: translateY(-2px);
+}
+
+.tab-btn.active {
+    background-color: var(--color-secondary);
+    color: white;
+    border-color: var(--color-secondary);
+    box-shadow: 0 4px 12px rgba(213, 175, 9, 0.3);
 }
 
 /* Service Card - Design "Précieux" */
@@ -236,7 +283,6 @@
 
     .services {
         padding: 60px 0;
-        border-top: 10px solid #621509;
     }
 
     .service-card {
@@ -258,5 +304,23 @@
     .service-title {
         font-size: 1.5rem;
     }
-}
 
+    /* Centrer les onglets sur mobile (suppression du scroll) */
+    .services-tabs {
+        justify-content: center;
+        overflow-x: visible;
+        padding-bottom: 0px;
+        white-space: normal;
+        flex-wrap: wrap;
+    }
+
+    .services-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tab-btn {
+        flex-shrink: 0;
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}

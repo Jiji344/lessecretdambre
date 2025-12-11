@@ -1,0 +1,100 @@
+{
+  "id": 3,
+  "category": "Épilation Femmes au Miel",
+  "description": "Peaux Sensibles ou Problèmes circulatoires (soin 100% Naturelle et efficace). Hydratation intense au liniment parfumé selon votre choix vous est administrée vous laissant une peau de satin.",
+  "note": "ATTENTION : JAMAIS D'HYDRATATION AVANT UNE ÉPILATION AU MIEL (24h)",
+  "startingPrice": 15,
+  "services": [
+    {
+      "id": 301,
+      "name": "Soin épilatore 1/2 bras au Miel",
+      "duration": 30,
+      "price": 30
+    },
+    {
+      "id": 302,
+      "name": "Soin épilatore 1/2 Jambes au Miel",
+      "duration": 40,
+      "price": 42
+    },
+    {
+      "id": 303,
+      "name": "Soin épilatore Aisselles au Miel",
+      "duration": 30,
+      "price": 20
+    },
+    {
+      "id": 304,
+      "name": "Soin épilatore Bras entiers au Miel",
+      "duration": 30,
+      "price": 39
+    },
+    {
+      "id": 305,
+      "name": "Soin épilatore Cuisses au Miel",
+      "duration": 45,
+      "price": 49
+    },
+    {
+      "id": 306,
+      "name": "Soin épilatore Fesses ou Ventre au Miel",
+      "duration": 30,
+      "price": 33
+    },
+    {
+      "id": 307,
+      "name": "Soin épilatore Jambes Entières au Miel",
+      "duration": 75,
+      "price": 88
+    },
+    {
+      "id": 308,
+      "name": "Soin épilatore Lèvres ou Menton au Miel",
+      "duration": 20,
+      "price": 15
+    },
+    {
+      "id": 309,
+      "name": "Soin épilatore Maillot Simple (aine) au Miel",
+      "duration": 30,
+      "price": 25
+    },
+    {
+      "id": 310,
+      "name": "Soin épilatore Maillot Brésilien au Miel",
+      "duration": 30,
+      "price": 38
+    },
+    {
+      "id": 311,
+      "name": "Soin épilatore Maillot Américain au Miel",
+      "duration": 45,
+      "price": 44
+    },
+    {
+      "id": 312,
+      "name": "Soin épilatore Maillot Intégral au Miel (Lèvres + SIF)",
+      "duration": 45,
+      "price": 49
+    },
+    {
+      "id": 313,
+      "name": "VAJACIAL Soin Pubis Post Epilatoire réparateur",
+      "duration": 90,
+      "price": 150
+    },
+    {
+      "id": 314,
+      "name": "Soin épilatore Sourcils (ligne et restructuration)",
+      "duration": 30,
+      "price": 22
+    },
+    {
+      "id": 315,
+      "name": "Sourcils restructuration au Miel",
+      "duration": 30,
+      "price": 29
+    }
+  ],
+  "mainCategory": "epilation"
+}

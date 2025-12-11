@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+
+    <!-- CSP permissive pour le développement local et le chargement des scripts/styles CMS -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' 'unsafe-inline' 'unsafe-eval' http://localhost:8081 https://unpkg.com https://cdn.jsdelivr.net https://identity.netlify.com https://*.netlify.com blob: data:;">
+</head>
+
+<body>
+    <!-- Netlify Identity Widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- Include the script that builds the page and powers Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.1.0/dist/decap-cms.js"></script>
+</body>
+
+</html>

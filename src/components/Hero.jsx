@@ -5,23 +5,6 @@ const Hero = () => {
     // Parallax effect on hero content (desktop only, 30% intensity)
     useParallax('hero-content', 0.3);
 
-    const scrollToContact = () => {
-        // Sur mobile, on défile vers les horaires. Sur desktop, vers la réservation.
-        const targetId = window.innerWidth < 768 ? 'opening-hours' : 'contact-cta';
-        const targetSection = document.getElementById(targetId);
-
-        if (targetSection) {
-            // Même offset que le bouton Contact du header
-            const headerOffset = 80;
-            const elementPosition = targetSection.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: "smooth"
-            });
-        }
-    };
 
     return (
         <section id="accueil" className="hero">
@@ -38,9 +21,14 @@ const Hero = () => {
                     <span className="separator">•</span>
                     <span>Maquillage</span>
                 </div>
-                <button onClick={scrollToContact} className="btn btn-primary hero-cta">
+                <a
+                    href="https://www.planity.com/les-secrets-dambre-epilation-miel-bio-caramel-orientale-soin-peaux-noires-34090-montpellier"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary hero-cta"
+                >
                     Réserver Maintenant
-                </button>
+                </a>
             </div>
         </section>
     );

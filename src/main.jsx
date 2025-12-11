@@ -13,7 +13,15 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/mentions-legales" element={<LegalNotice />} />
+        {/* Redirection pour le CMS si React Router intercepte la demande */}
+        <Route path="/admin/*" element={<AdminRedirect />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
 )
+
+// Composant simple pour forcer le rechargement vers le fichier statique admin
+function AdminRedirect() {
+  window.location.href = '/admin/index.html';
+  return null;
+}

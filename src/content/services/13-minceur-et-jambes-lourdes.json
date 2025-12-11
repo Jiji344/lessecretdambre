@@ -1,0 +1,51 @@
+{
+  "id": 13,
+  "category": "Minceur et Jambes Lourdes",
+  "description": "Traitements pour la minceur et les jambes lourdes.",
+  "startingPrice": 65,
+  "services": [
+    {
+      "id": 1301,
+      "name": "Palper roulé Sweet Palping - 1 séance - 1 zone",
+      "duration": 30,
+      "price": 65
+    },
+    {
+      "id": 1302,
+      "name": "PROMO PRINTEMPS - Palper roulé 4 séances",
+      "duration": 30,
+      "price": 99
+    },
+    {
+      "id": 1303,
+      "name": "Palper roulé Sweet Palping - 1 séance - 2 zones",
+      "duration": 60,
+      "price": 99
+    },
+    {
+      "id": 1304,
+      "name": "Palper roulé Sweet Palping - 5 séances - 1 zone",
+      "duration": 30,
+      "price": 299
+    },
+    {
+      "id": 1305,
+      "name": "Palper roulé Sweet Palping - 5 séances - 2 zones",
+      "duration": 30,
+      "price": 499
+    },
+    {
+      "id": 1306,
+      "name": "Palper roulé Sweet Palping - 10 séances - 1 zone",
+      "duration": 30,
+      "price": 579
+    },
+    {
+      "id": 1307,
+      "name": "Palper roulé Sweet Palping - 10 séances - 2 zones",
+      "duration": 30,
+      "price": 869
+    }
+  ],
+  "mainCategory": "corps"
+}

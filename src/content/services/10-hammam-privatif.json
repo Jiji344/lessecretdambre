@@ -1,0 +1,117 @@
+{
+  "id": 10,
+  "category": "Hammam Privatif",
+  "description": "Soins effectués par l'esthéticienne exclusivement. Seule la rubrique 'Autour du Hammam' comprend la séance H.",
+  "startingPrice": 89,
+  "services": [
+    {
+      "id": 1001,
+      "name": "Pureté: Hammam + Gommage corps",
+      "duration": 60,
+      "price": 89
+    },
+    {
+      "id": 1002,
+      "name": "Zen: Hammam + Gommage + Enveloppement",
+      "duration": 90,
+      "price": 125
+    },
+    {
+      "id": 1003,
+      "name": "Évasion: Hammam + Gommage + Enveloppement + Soin Visage",
+      "duration": 120,
+      "price": 189
+    },
+    {
+      "id": 1004,
+      "name": "Douceur d'orient: Hammam + Gommage + Massage 30 mn",
+      "duration": 90,
+      "price": 155
+    },
+    {
+      "id": 1005,
+      "name": "Les secrets d'Argania: Hammam + Massage corps 60 mn",
+      "duration": 90,
+      "price": 149
+    },
+    {
+      "id": 1006,
+      "name": "Reine de Saba: Hammam + Gommage + Enveloppement + Massage 30 mn",
+      "duration": 120,
+      "price": 199
+    },
+    {
+      "id": 1007,
+      "name": "Les Secrets d'Ambre: Hammam + Gommage + Enveloppement + Massage 60 mn",
+      "duration": 150,
+      "price": 249
+    },
+    {
+      "id": 1008,
+      "name": "Les secrets de Cléopâtre: Sauna + Palper roulé + enveloppement",
+      "duration": 120,
+      "price": 169
+    },
+    {
+      "id": 1009,
+      "name": "Les Secrets de la Mer Morte: Hammam + Gommage + Soin visage + Kobido",
+      "duration": 150,
+      "price": 279
+    },
+    {
+      "id": 1010,
+      "name": "Cure de la Mer Morte (4 séances)",
+      "duration": 90,
+      "price": 499
+    },
+    {
+      "id": 1011,
+      "name": "Rituel romain au Totum d'Olive",
+      "duration": 150,
+      "price": 239
+    },
+    {
+      "id": 1012,
+      "name": "Saveur des îles à la Noix de Coco",
+      "duration": 120,
+      "price": 199
+    },
+    {
+      "id": 1013,
+      "name": "Au Nom de la Rose Bio AROMAZONE",
+      "duration": 180,
+      "price": 389
+    },
+    {
+      "id": 1014,
+      "name": "Détente Extrême: Massage 60 mn + Sauna infrarouge",
+      "duration": 90,
+      "price": 140
+    },
+    {
+      "id": 1015,
+      "name": "Détente extrême et peau douce",
+      "duration": 150,
+      "price": 220
+    },
+    {
+      "id": 1016,
+      "name": "Séance Hammam ou Sauna Solo",
+      "duration": 45,
+      "price": 49
+    },
+    {
+      "id": 1017,
+      "name": "Séance Hammam ou Sauna Duo",
+      "duration": 45,
+      "price": 45
+    },
+    {
+      "id": 1018,
+      "name": "Hammam + Massage duo synchronisé",
+      "duration": 120,
+      "price": 350
+    }
+  ],
+  "mainCategory": "corps"
+}
