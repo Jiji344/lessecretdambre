@@ -154,24 +154,5 @@
 
     .review-card {
         padding: var(--spacing-sm);
-        width: 300px;
-        /* Fixed width for mobile cards */
-    }
-
-    /* Manual Scrolling on Mobile */
-    .reviews-scroller {
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        mask: none;
-        -webkit-mask: none;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .reviews-track {
-        animation: none;
-        width: max-content;
-        gap: 20px;
     }
 }
