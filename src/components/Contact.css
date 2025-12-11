@@ -3,13 +3,14 @@
     background-color: var(--color-background);
     padding: 100px 0;
     position: relative;
-   
+
 }
 
 .contact-header .section-title {
     font-family: var(--font-heading);
     font-size: 2.5rem;
-    color: #1a1a1a;
+    color: #650c05;
+    /* Requested color */
     margin-bottom: 15px;
     text-align: center;
 }
@@ -43,7 +44,8 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
     border: 1px solid rgba(0, 0, 0, 0.03);
     position: relative;
-    height: 100%; /* Forcer la même hauteur si grid */
+    height: 100%;
+    /* Forcer la même hauteur si grid */
 }
 
 /* Bordure décorative interne */

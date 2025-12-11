@@ -7,6 +7,11 @@
     overflow: hidden;
 }
 
+.gallery h2 {
+    color: #650c05;
+    /* Requested color */
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

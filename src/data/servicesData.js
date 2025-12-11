@@ -29,8 +29,13 @@ export const categoryGroups = [
     },
     {
         id: 'epilation',
-        title: 'Épilation',
-        subCategories: [1, 2, 3, 4, 5, 6, 7]
+        title: 'Épilation ♀︎',
+        subCategories: [1, 2, 3, 4]
+    },
+    {
+        id: 'epilation_homme',
+        title: 'Épilation ♂︎',
+        subCategories: [5, 6, 7]
     },
     {
         id: 'relaxation',
