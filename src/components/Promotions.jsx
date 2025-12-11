@@ -34,45 +34,45 @@ const Promotions = () => {
                     </h2>
                     <div className="underline"></div>
                 </div>
+            </div>
 
-                {promoData.images.length > 4 ? (
-                    <div className="promotions-scroller">
-                        <div className="promotions-track">
-                            {/* Original Items */}
-                            {promoData.images.map((item, index) => (
-                                <div
-                                    key={`original-${index}`}
-                                    className="promotion-item"
-                                >
-                                    <img src={item.image} alt={item.alt || "Promotion"} loading="lazy" />
-                                </div>
-                            ))}
-                            {/* Duplicated Items for Loop */}
-                            {promoData.images.map((item, index) => (
-                                <div
-                                    key={`duplicate-${index}`}
-                                    className="promotion-item"
-                                >
-                                    <img src={item.image} alt={item.alt || "Promotion"} loading="lazy" />
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                ) : (
-                    <div className="promotions-grid static-grid">
+            {promoData.images.length > 4 ? (
+                <div className="promotions-scroller">
+                    <div className="promotions-track">
+                        {/* Original Items */}
                         {promoData.images.map((item, index) => (
                             <div
-                                key={index}
+                                key={`original-${index}`}
                                 className="promotion-item"
-                                data-animate="fade-up"
-                                data-animate-delay={Math.min(index, 10)}
+                            >
+                                <img src={item.image} alt={item.alt || "Promotion"} loading="lazy" />
+                            </div>
+                        ))}
+                        {/* Duplicated Items for Loop */}
+                        {promoData.images.map((item, index) => (
+                            <div
+                                key={`duplicate-${index}`}
+                                className="promotion-item"
                             >
                                 <img src={item.image} alt={item.alt || "Promotion"} loading="lazy" />
                             </div>
                         ))}
                     </div>
-                )}
-            </div>
+                </div>
+            ) : (
+                <div className="promotions-grid static-grid">
+                    {promoData.images.map((item, index) => (
+                        <div
+                            key={index}
+                            className="promotion-item"
+                            data-animate="fade-up"
+                            data-animate-delay={Math.min(index, 10)}
+                        >
+                            <img src={item.image} alt={item.alt || "Promotion"} loading="lazy" />
+                        </div>
+                    ))}
+                </div>
+            )}
         </section>
     );
 };

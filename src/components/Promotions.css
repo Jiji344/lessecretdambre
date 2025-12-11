@@ -21,22 +21,34 @@
 
 /* Static Grid: Full Width when items <= 4 */
 .promotions-grid.static-grid {
-    width: 100%;
-    justify-content: space-evenly;
-    /* Spread items across full width */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 40px;
+    /* Some padding to not touch screen edges */
     flex-wrap: nowrap;
-    /* Force single line as requested */
 }
 
 /* Scrolling Styles */
 .promotions-scroller {
-    width: 100%;
+    width: 100vw;
+    /* Take full viewport width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     overflow: hidden;
     margin-top: 40px;
-    padding: 10px 0;
-    /* Mask for fading edges */
-    mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
-    -webkit-mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+    padding: 20px 0;
+    /* Mask adjusted for full width effect */
+    mask: linear-gradient(90deg, transparent 0%, white 5%, white 95%, transparent 100%);
+    -webkit-mask: linear-gradient(90deg, transparent 0%, white 5%, white 95%, transparent 100%);
 }
 
 .promotions-track {
@@ -113,7 +125,21 @@
         max-width: 90%;
     }
 
-    .promotions-scroller .promotion-item {
-        width: 250px;
+    .promotions-scroller {
+        width: 100vw;
+        padding-left: 20px;
+        padding-right: 20px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        mask: none;
+        -webkit-mask: none;
+        /* Disable mask to see edges clearly */
+    }
+
+    .promotions-track {
+        animation: none;
+        width: max-content;
+        gap: 20px;
+        /* Adjust gap for mobile */
     }
 }

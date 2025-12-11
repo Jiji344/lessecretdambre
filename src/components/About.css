@@ -195,7 +195,7 @@
 }
 
 .feature-description {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-primary);
     font-size: 0.8rem;
     line-height: 1.8;
     color: #666;

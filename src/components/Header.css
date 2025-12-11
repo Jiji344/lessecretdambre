@@ -68,7 +68,7 @@
 }
 
 .logo-subtitle {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-primary);
     font-size: 0.9rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.8);
@@ -100,7 +100,7 @@
     /* Blanc */
     cursor: pointer;
     transition: all 0.3s ease;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-primary);
     position: relative;
     opacity: 0.9;
 }

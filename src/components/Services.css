@@ -218,7 +218,7 @@
 
 /* Service Info */
 .service-info {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-primary);
     font-size: 0.8rem;
     color: var(--color-text-light);
     margin-bottom: 5px;
@@ -227,7 +227,7 @@
 
 /* Service Price */
 .service-price {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-primary);
     font-size: 0.9rem;
     font-weight: 600;
     color: #1a1a1a;
@@ -238,7 +238,7 @@
 .btn-view-all {
     background-color: transparent;
     color: #1a1a1a;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-primary);
     font-size: 0.85rem;
     font-weight: 500;
     text-transform: uppercase;
